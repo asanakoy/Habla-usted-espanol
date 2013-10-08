@@ -1,0 +1,55 @@
+### espanol_sustantivo.foma ###
+read lexc espanol_sustantivo.lexc
+define Lexicon;
+
+define MascToFemLastToA  e -> a || _ "*" ,,
+			 o -> a || _ "*" ;
+
+define PlusAEndings [ o r | t o r | d o r | i o n | a l];
+
+define MascToFemEndAInsertion [..] -> a || PlausAEndings _ "*";
+
+define StarDelete "*" -> 0;
+
+define WhenInsertE [ q | w | r | t | p | s | d | f | g | h | j | k | l | z | x | c | v | b | n | m | y | i | á | é | í | ó ];
+
+define PluralEInsertion [..] -> e || WhenInsertE "^" _ s; 
+
+define CReplacement c -> qu || _ "^";
+
+define ZXReplacement z -> c || _ "^",,
+		     x -> c || _ "^";
+
+define HatDelete "^" -> 0;
+
+define Grammar  Lexicon 		.o. 
+      		MascToFemLastToA 	.o. 
+		MascToFemEndAInsertion 	.o. 
+		StarDelete 		.o. 
+		PluralEInsertion 	.o. 
+		CReplacement  		.o. 
+		ZXReplacement 		.o. 
+		HatDelete;
+
+
+define Exception1 [[p a p á  "+N" "+MASC" "+PL" .x. p a p á s] | 
+	[p a p á "+N" "+MASC" "+SG" .x. p a p á]];
+define Exception2 [[m a m á  "+N" "+MASC" "+PL" .x. m a m á s] | 
+	[m a m á "+N" "+MASC" "+SG" .x. m a m á]];
+define Exception3 [[{sofá}  "+N" "+MASC" "+PL" .x. {sofás}] | 
+	[{sofá} "+N" "+MASC" "+SG".x. {sofá}]];
+define Exception4 [[{club}  "+N" "+MASC" "+PL" .x. {clubs}] | 
+	[{club} "+N" "+MASC" "+SG"..x. {club}]];
+define Exception5 [[{film}  "+N" "+MASC" "+PL" .x. {films}] | 
+	[{film} "+N" "+MASC" "+SG"..x. {film}]];
+define Exception6 [[{déficit}  "+N" "+MASC" "+PL" .x. {déficits}] | 
+	[{déficit} "+N" "+MASC" "+SG"..x. {déficit}]];
+
+
+
+
+define Exceptions Exception1 | Exception2 | Exception3 | Exception4 | Exception5 | Exception6;
+
+define FullGrammar Exceptions .P. Grammar;
+
+regex FullGrammar;
