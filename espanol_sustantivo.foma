@@ -39,11 +39,11 @@ define Exception2 [[m a m á  "+N" "+MASC" "+PL" .x. m a m á s] |
 define Exception3 [[{sofá}  "+N" "+MASC" "+PL" .x. {sofás}] | 
 	[{sofá} "+N" "+MASC" "+SG".x. {sofá}]];
 define Exception4 [[{club}  "+N" "+MASC" "+PL" .x. {clubs}] | 
-	[{club} "+N" "+MASC" "+SG"..x. {club}]];
+	[{club} "+N" "+MASC" "+SG".x. {club}]];
 define Exception5 [[{film}  "+N" "+MASC" "+PL" .x. {films}] | 
-	[{film} "+N" "+MASC" "+SG"..x. {film}]];
+	[{film} "+N" "+MASC" "+SG".x. {film}]];
 define Exception6 [[{déficit}  "+N" "+MASC" "+PL" .x. {déficits}] | 
-	[{déficit} "+N" "+MASC" "+SG"..x. {déficit}]];
+	[{déficit} "+N" "+MASC" "+SG".x. {déficit}]];
 
 
 
