@@ -1,0 +1,48 @@
+define C [b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z];
+define V [a | e | i | o | u | á | é | í | ó ];
+
+define Stem [C^<3 V C^<3]+;
+
+
+define GuessLexicon Stem [ 
+	[o r "+N"]:[o r [ 0 | "*" | "^" s | "*" "^"s ] ]	|
+	[i o n "+N"]:[i o n  [ 0 | "*" | "^" s | "*" "^"s ] ]	|
+	[a l "+N"]:[a l [ 0 | "*" | "^" s | "*" "^"s ] ]	|
+	[o "+N"]:[o [ 0 | "*" | "^" s | "*" "^"s ]  ]           |		
+	["+N"]:["^" s | "*" "^" s] ] ;
+
+
+define MascToFemLastToA  e -> a || _ "*" ,,
+			 o -> a || _ "*" ;
+
+define PlusAEndings [ o r | t o r | d o r | i o n | a l];
+
+define MascToFemEndAInsertion [..] -> a || PlusAEndings _ "*";
+
+define StarDelete "*" -> 0;
+
+define WhenInsertE [ q | w | r | t | p | s | d | f | g | h | j | k | l | z | x | c | v | b | n | m | y | i | á | é | í | ó ];
+
+define PluralEInsertion [..] -> e || WhenInsertE "^" _ s; 
+
+define CReplacement c -> qu || _ "^";
+
+define ZXReplacement z -> c || _ "^",,
+		     x -> c || _ "^";
+
+define HatDelete "^" -> 0;
+
+define GuessGrammar  GuessLexicon 	.o. 
+      		MascToFemLastToA 	.o. 
+		MascToFemEndAInsertion 	.o. 
+		StarDelete 		.o. 
+		PluralEInsertion 	.o. 
+		CReplacement  		.o. 
+		ZXReplacement 		.o. 
+		HatDelete;
+
+regex GuessGrammar;
+
+save stack GuesserSustantivo.bin
+
+quit;
