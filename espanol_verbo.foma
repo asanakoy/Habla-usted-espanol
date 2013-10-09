@@ -1,46 +1,20 @@
+source common.foma
+
 read lexc espanol_verbo.lexc
 
 define Lexicon;
 
-define PresIndYo1 [a r "^"] -> o || _ 1;
-define PresIndTu1 [a r "^"] -> as || _ 2;
-define PresIndElla1 [a r "^"] -> a || _ 3;
-define PresIndNos1 [a r "^"] -> amos || _ 4;
-define PresIndVos1 [a r "^"] -> áis || _ 5;
-define PresIndUst1 [a r "^"] -> an || _ 6;
+source espanol_verbo_pres_ind.foma
 
-define PresIndYo2 [e r "^"] -> o || _ 1;
-define PresIndTu2 [e r "^"] -> es || _ 2;
-define PresIndElla2 [e r "^"] -> e || _ 3;
-define PresIndNos2 [e r "^"] -> emos || _ 4;
-define PresIndVos2 [e r "^"] -> éis || _ 5;
-define PresIndUst2 [e r "^"] -> en || _ 6;
+source espanol_verbo_pret_imp.foma
 
-define PresIndYo3 [i r "^"] -> o || _ 1;
-define PresIndTu3 [i r "^"] -> es || _ 2;
-define PresIndElla3 [i r "^"] -> e || _ 3;
-define PresIndNos3 [i r "^"] -> imos || _ 4;
-define PresIndVos3 [i r "^"] -> ís || _ 5;
-define PresIndUst3 [i r "^"] -> en || _ 6;
-
-define PresInd1 PresIndYo1 .o. PresIndTu1 .o. PresIndElla1 .o. PresIndNos1 .o. PresIndVos1 .o. PresIndUst1;
-define PresInd2 PresIndYo2 .o. PresIndTu2 .o. PresIndElla2 .o. PresIndNos2 .o. PresIndVos2 .o. PresIndUst2;
-define PresInd3 PresIndYo3 .o. PresIndTu3 .o. PresIndElla3 .o. PresIndNos3 .o. PresIndVos3 .o. PresIndUst3;
-
-define PresInd PresInd1 .o. PresInd2 .o. PresInd3;
-
-define HatDelete "^" -> 0;
-
-define Digits [0 | 1 |  2 | 3 | 4 | 5 | 6];
-
-define DigitsDelete Digits -> 0;
-
-define FullVerboGrammar Lexicon .o. PresInd .o. HatDelete;
-
-regex    Lexicon
-     .o. PresInd
-     .o. DigitsDelete
-     .o. HatDelete;
+define FullVerboGrammar Lexicon
+                        .o. PresInd
+                        .o. PretImpInd
+                        .o. DigitsDelete
+                        .o. HatDelete
+                        .o. StarDelete;
+regex FullVerboGrammar;
 
 save stack NormalVerbo.bin
 

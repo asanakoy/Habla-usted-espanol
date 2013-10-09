@@ -1,4 +1,6 @@
 ### espanol_sustantivo.foma ###
+source common.foma
+
 read lexc espanol_sustantivo.lexc
 define Lexicon;
 
@@ -9,8 +11,6 @@ define PlusAEndings [ o r | t o r | d o r | i o n | a l];
 
 define MascToFemEndAInsertion [..] -> a || PlusAEndings _ "*";
 
-define StarDelete "*" -> 0;
-
 define WhenInsertE [ q | w | r | t | p | s | d | f | g | h | j | k | l | z | x | c | v | b | n | m | y | i | á | é | í | ó ];
 
 define PluralEInsertion [..] -> e || WhenInsertE "^" _ s; 
@@ -19,8 +19,6 @@ define CReplacement c -> qu || _ "^";
 
 define ZXReplacement z -> c || _ "^",,
 		     x -> c || _ "^";
-
-define HatDelete "^" -> 0;
 
 define Grammar  Lexicon 		.o. 
       		MascToFemLastToA 	.o. 

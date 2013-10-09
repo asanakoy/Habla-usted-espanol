@@ -1,0 +1,27 @@
+define PretImpIndYo1 [a r "*"] -> aba || _ 1;
+define PretImpIndTu1 [a r "*"] -> abas || _ 2;
+define PretImpIndElla1 [a r "*"] -> aba || _ 3;
+define PretImpIndNos1 [a r "*"] -> ábamos || _ 4;
+define PretImpIndVos1 [a r "*"] -> abais || _ 5;
+define PretImpIndUst1 [a r "*"] -> aban || _ 6;
+
+define PretImpIndYo2 [e r "*"] -> ía || _ 1;
+define PretImpIndTu2 [e r "*"] -> ías || _ 2;
+define PretImpIndElla2 [e r "*"] -> ía || _ 3;
+define PretImpIndNos2 [e r "*"] -> íamos || _ 4;
+define PretImpIndVos2 [e r "*"] -> íais || _ 5;
+define PretImpIndUst2 [e r "*"] -> ían || _ 6;
+
+define PretImpIndYo3 [i r "*"] -> ía || _ 1;
+define PretImpIndTu3 [i r "*"] -> ías || _ 2;
+define PretImpIndElla3 [i r "*"] -> ía || _ 3;
+define PretImpIndNos3 [i r "*"] -> íamos || _ 4;
+define PretImpIndVos3 [i r "*"] -> íais || _ 5;
+define PretImpIndUst3 [i r "*"] -> ían || _ 6;
+
+define PretImpInd1 PretImpIndYo1 .o. PretImpIndTu1 .o. PretImpIndElla1 .o. PretImpIndNos1 .o. PretImpIndVos1 .o. PretImpIndUst1;
+define PretImpInd2 PretImpIndYo2 .o. PretImpIndTu2 .o. PretImpIndElla2 .o. PretImpIndNos2 .o. PretImpIndVos2 .o. PretImpIndUst2;
+define PretImpInd3 PretImpIndYo3 .o. PretImpIndTu3 .o. PretImpIndElla3 .o. PretImpIndNos3 .o. PretImpIndVos3 .o. PretImpIndUst3;
+
+define PretImpInd PretImpInd1 .o. PretImpInd2 .o. PretImpInd3;
+

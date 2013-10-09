@@ -2125,3 +2125,10 @@ LEXICON VInf
 +IPRES+VOS:^5 #;
 +IPRES+UST:^6 #;
 
++IPIMP+YO:*1 #;
++IPIMP+TU:*2 #;
++IPIMP+ELLA:*3 #;
++IPIMP+NOS:*4 #;
++IPIMP+VOS:*5 #;
++IPIMP+UST:*6 #;
+
