@@ -1,5 +1,5 @@
 
-Multichar_Symbols +IPRES +IPIMP +IPIND +IFUTU +ISPRES +ISPIMA +YO +TU +ELLA +NOS +VOS +UST
+Multichar_Symbols +V +IPRES +IPIMP +IPIND +IFUTU +ISPRES +ISPIMA +YO +TU +ELLA +NOS +VOS +UST
 
 LEXICON Root
 
@@ -2118,17 +2118,17 @@ zurcir VInf;
 
 LEXICON VInf
 
-+IPRES+YO:^1 #;
-+IPRES+TU:^2 #;
-+IPRES+ELLA:^3 #;
-+IPRES+NOS:^4 #;
-+IPRES+VOS:^5 #;
-+IPRES+UST:^6 #;
++V+IPRES+YO:^1 #;
++V+IPRES+TU:^2 #;
++V+IPRES+ELLA:^3 #;
++V+IPRES+NOS:^4 #;
++V+IPRES+VOS:^5 #;
++V+IPRES+UST:^6 #;
 
-+IPIMP+YO:*1 #;
-+IPIMP+TU:*2 #;
-+IPIMP+ELLA:*3 #;
-+IPIMP+NOS:*4 #;
-+IPIMP+VOS:*5 #;
-+IPIMP+UST:*6 #;
++V+IPIMP+YO:*1 #;
++V+IPIMP+TU:*2 #;
++V+IPIMP+ELLA:*3 #;
++V+IPIMP+NOS:*4 #;
++V+IPIMP+VOS:*5 #;
++V+IPIMP+UST:*6 #;
 
