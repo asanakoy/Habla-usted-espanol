@@ -1,0 +1,27 @@
+define PretIndefIndYo1 [a r "$"] -> é || _ 1;
+define PretIndefIndTu1 [a r "$"] -> aste || _ 2;
+define PretIndefIndElla1 [a r "$"] ->  ó   || _ 3;
+define PretIndefIndNos1 [a r "$"] -> amos || _ 4;
+define PretIndefIndVos1 [a r "$"] -> asteis || _ 5;
+define PretIndefIndUst1 [a r "$"] -> aron || _ 6;
+
+define PretIndefIndYo2 [e r "$"] -> í || _ 1;
+define PretIndefIndTu2 [e r "$"] -> iste || _ 2;
+define PretIndefIndElla2 [e r "$"] -> ió || _ 3;
+define PretIndefIndNos2 [e r "$"] -> imos || _ 4;
+define PretIndefIndVos2 [e r "$"] -> isteis || _ 5;
+define PretIndefIndUst2 [e r "$"] -> ieron || _ 6;
+
+define PretIndefIndYo3 [i r "$"] -> í || _ 1;
+define PretIndefIndTu3 [i r "$"] -> iste || _ 2;
+define PretIndefIndElla3 [i r "$"] -> ió || _ 3;
+define PretIndefIndNos3 [i r "$"] -> imos || _ 4;
+define PretIndefIndVos3 [i r "$"] -> isteis || _ 5;
+define PretIndefIndUst3 [i r "$"] -> ieron || _ 6;
+
+define PretIndefInd1 PretIndefIndYo1 .o. PretIndefIndTu1 .o. PretIndefIndElla1 .o. PretIndefIndNos1 .o. PretIndefIndVos1 .o. PretIndefIndUst1;
+define PretIndefInd2 PretIndefIndYo2 .o. PretIndefIndTu2 .o. PretIndefIndElla2 .o. PretIndefIndNos2 .o. PretIndefIndVos2 .o. PretIndefIndUst2;
+define PretIndefInd3 PretIndefIndYo3 .o. PretIndefIndTu3 .o. PretIndefIndElla3 .o. PretIndefIndNos3 .o. PretIndefIndVos3 .o. PretIndefIndUst3;
+
+define PretIndefInd PretIndefInd1 .o. PretIndefInd2 .o. PretIndefInd3;
+

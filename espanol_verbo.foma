@@ -8,9 +8,12 @@ source espanol_verbo_pres_ind.foma
 
 source espanol_verbo_pret_imp.foma
 
+source espanol_verbo_pret_indef.foma
+
 define FullVerboGrammar Lexicon
                         .o. PresInd
                         .o. PretImpInd
+                        .o. PretIndefInd
                         .o. DigitsDelete
                         .o. HatDelete
                         .o. StarDelete;

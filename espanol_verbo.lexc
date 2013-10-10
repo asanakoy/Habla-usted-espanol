@@ -2132,3 +2132,10 @@ LEXICON VInf
 +V+IPIMP+VOS:*5 #;
 +V+IPIMP+UST:*6 #;
 
++V+IPIND+YO:$1 #;
++V+IPIND+TU:$2 #;
++V+IPIND+ELLA:$3 #;
++V+IPIND+NOS:$4 #;
++V+IPIND+VOS:$5 #;
++V+IPIND+UST:$6 #;
+
