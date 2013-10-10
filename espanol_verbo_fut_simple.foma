@@ -1,0 +1,27 @@
+define FutSimpleIndYo1 [a r "@"] -> é || _ 1;
+define FutSimpleIndTu1 [a r "@"] -> ás || _ 2;
+define FutSimpleIndElla1 [a r "@"] -> á || _ 3;
+define FutSimpleIndNos1 [a r "@"] -> emos || _ 4;
+define FutSimpleIndVos1 [a r "@"] -> éis || _ 5;
+define FutSimpleIndUst1 [a r "@"] -> án || _ 6;
+
+define FutSimpleIndYo2 [e r "@"] -> é || _ 1;
+define FutSimpleIndTu2 [e r "@"] -> ás || _ 2;
+define FutSimpleIndElla2 [e r "@"] -> á || _ 3;
+define FutSimpleIndNos2 [e r "@"] -> emos || _ 4;
+define FutSimpleIndVos2 [e r "@"] -> éis || _ 5;
+define FutSimpleIndUst2 [e r "@"] -> án || _ 6;
+
+define FutSimpleIndYo3 [i r "@"] -> é || _ 1;
+define FutSimpleIndTu3 [i r "@"] -> ás || _ 2;
+define FutSimpleIndElla3 [i r "@"] -> á || _ 3;
+define FutSimpleIndNos3 [i r "@"] -> emos || _ 4;
+define FutSimpleIndVos3 [i r "@"] -> éis || _ 5;
+define FutSimpleIndUst3 [i r "@"] -> án || _ 6;
+
+define FutSimpleInd1 FutSimpleIndYo1 .o. FutSimpleIndTu1 .o. FutSimpleIndElla1 .o. FutSimpleIndNos1 .o. FutSimpleIndVos1 .o. FutSimpleIndUst1;
+define FutSimpleInd2 FutSimpleIndYo2 .o. FutSimpleIndTu2 .o. FutSimpleIndElla2 .o. FutSimpleIndNos2 .o. FutSimpleIndVos2 .o. FutSimpleIndUst2;
+define FutSimpleInd3 FutSimpleIndYo3 .o. FutSimpleIndTu3 .o. FutSimpleIndElla3 .o. FutSimpleIndNos3 .o. FutSimpleIndVos3 .o. FutSimpleIndUst3;
+
+define FutSimpleInd FutSimpleInd1 .o. FutSimpleInd2 .o. FutSimpleInd3;
+

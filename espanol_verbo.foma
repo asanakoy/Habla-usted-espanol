@@ -10,13 +10,18 @@ source espanol_verbo_pret_imp.foma
 
 source espanol_verbo_pret_indef.foma
 
+source espanol_verbo_fut_simple.foma
+
 define FullVerboGrammar Lexicon
                         .o. PresInd
                         .o. PretImpInd
                         .o. PretIndefInd
+                        .o. FutSimpleInd
                         .o. DigitsDelete
                         .o. HatDelete
+                        .o. PercentDelete
                         .o. StarDelete;
+
 regex FullVerboGrammar;
 
 save stack NormalVerbo.bin

@@ -2139,3 +2139,10 @@ LEXICON VInf
 +V+IPIND+VOS:$5 #;
 +V+IPIND+UST:$6 #;
 
++V+IFUTU+YO:@1 #;
++V+IFUTU+TU:@2 #;
++V+IFUTU+ELLA:@3 #;
++V+IFUTU+NOS:@4 #;
++V+IFUTU+VOS:@5 #;
++V+IFUTU+UST:@6 #;
+
