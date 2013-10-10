@@ -8,3 +8,4 @@ define DigitsDelete Digits -> 0;
 
 define PercentDelete "%" -> 0;
 
+define BangDelete "!" -> 0;

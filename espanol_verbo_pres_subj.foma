@@ -1,0 +1,27 @@
+define PresSubjYo1 [a r "&"] -> e || _ 1;
+define PresSubjTu1 [a r "&"] -> es || _ 2;
+define PresSubjElla1 [a r "&"] -> e || _ 3;
+define PresSubjNos1 [a r "&"] -> emos || _ 4;
+define PresSubjVos1 [a r "&"] -> éis || _ 5;
+define PresSubjUst1 [a r "&"] -> en || _ 6;
+
+define PresSubjYo2 [e r "&"] -> a || _ 1;
+define PresSubjTu2 [e r "&"] -> as || _ 2;
+define PresSubjElla2 [e r "&"] -> a || _ 3;
+define PresSubjNos2 [e r "&"] -> amos || _ 4;
+define PresSubjVos2 [e r "&"] -> áis || _ 5;
+define PresSubjUst2 [e r "&"] -> an || _ 6;
+
+define PresSubjYo3 [i r "&"] -> a || _ 1;
+define PresSubjTu3 [i r "&"] -> as || _ 2;
+define PresSubjElla3 [i r "&"] -> a || _ 3;
+define PresSubjNos3 [i r "&"] -> amos || _ 4;
+define PresSubjVos3 [i r "&"] -> áis || _ 5;
+define PresSubjUst3 [i r "&"] -> an || _ 6;
+
+define PresSubj1 PresSubjYo1 .o. PresSubjTu1 .o. PresSubjElla1 .o. PresSubjNos1 .o. PresSubjVos1 .o. PresSubjUst1;
+define PresSubj2 PresSubjYo2 .o. PresSubjTu2 .o. PresSubjElla2 .o. PresSubjNos2 .o. PresSubjVos2 .o. PresSubjUst2;
+define PresSubj3 PresSubjYo3 .o. PresSubjTu3 .o. PresSubjElla3 .o. PresSubjNos3 .o. PresSubjVos3 .o. PresSubjUst3;
+
+define PresSubj PresSubj1 .o. PresSubj2 .o. PresSubj3;
+
