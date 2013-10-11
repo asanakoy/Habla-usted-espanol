@@ -14,12 +14,15 @@ source espanol_verbo_fut_simple.foma
 
 source espanol_verbo_pres_subj.foma
 
+source espanol_verbo_subj_pret_imp.foma
+
 define FullVerboGrammar Lexicon
                         .o. PresInd
                         .o. PretImpInd
                         .o. PretIndefInd
                         .o. FutSimpleInd
                         .o. PresSubj
+                        .o. SubjPretImp
                         .o. DigitsDelete
                         .o. HatDelete
                         .o. PercentDelete

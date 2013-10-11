@@ -1,5 +1,5 @@
 
-Multichar_Symbols +V +IPRES +IPIMP +IPIND +IFUTU +SPRES +ISPIMA +YO +TU +ELLA +NOS +VOS +UST
+Multichar_Symbols +V +IPRES +IPIMP +IPIND +IFUTU +SPRES +SPIMA +YO +TU +ELLA +NOS +VOS +UST
 
 LEXICON Root
 
@@ -2152,4 +2152,18 @@ LEXICON VInf
 +V+SPRES+NOS:&4 #;
 +V+SPRES+VOS:&5 #;
 +V+SPRES+UST:&6 #;
+
++V+SPIMA+YO:(1 #;
++V+SPIMA+TU:(2 #;
++V+SPIMA+ELLA:(3 #;
++V+SPIMA+NOS:(4 #;
++V+SPIMA+VOS:(5 #;
++V+SPIMA+UST:(6 #;
+
++V+SPIMA+YO:((1 #;
++V+SPIMA+TU:((2 #;
++V+SPIMA+ELLA:((3 #;
++V+SPIMA+NOS:((4 #;
++V+SPIMA+VOS:((5 #;
++V+SPIMA+UST:((6 #;
 

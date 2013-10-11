@@ -1,0 +1,56 @@
+define SubjPretImpYo1 [a r "("] -> ase || _ 1;
+define SubjPretImpTu1 [a r "("] -> ases || _ 2;
+define SubjPretImpElla1 [a r "("] -> ase || _ 3;
+define SubjPretImpNos1 [a r "("] -> ásemos || _ 4;
+define SubjPretImpVos1 [a r "("] -> aseis || _ 5;
+define SubjPretImpUst1 [a r "("] -> asen || _ 6;
+
+define SubjPretImpYo11 [a r "(" "("] -> ara || _ 1;
+define SubjPretImpTu11 [a r "(" "("] -> aras || _ 2;
+define SubjPretImpElla11 [a r "(" "("] -> ara || _ 3;
+define SubjPretImpNos11 [a r "(" "("] -> áramos || _ 4;
+define SubjPretImpVos11 [a r "(" "("] -> arais || _ 5;
+define SubjPretImpUst11 [a r "(" "("] -> aran || _ 6;
+
+
+define SubjPretImpYo2 [e r "("] -> iese || _ 1;
+define SubjPretImpTu2 [e r "("] -> ieses || _ 2;
+define SubjPretImpElla2 [e r "("] -> iese || _ 3;
+define SubjPretImpNos2 [e r "("] -> iésemos || _ 4;
+define SubjPretImpVos2 [e r "("] -> ieseis || _ 5;
+define SubjPretImpUst2 [e r "("] -> iesen || _ 6;
+
+define SubjPretImpYo22 [e r "(" "("] -> iera || _ 1;
+define SubjPretImpTu22 [e r "(" "("] -> ieras || _ 2;
+define SubjPretImpElla22 [e r "(" "("] -> iera || _ 3;
+define SubjPretImpNos22 [e r "(" "("] -> iéramos || _ 4;
+define SubjPretImpVos22 [e r "(" "("] -> ierais || _ 5;
+define SubjPretImpUst22 [e r "(" "("] -> ieran || _ 6;
+
+
+define SubjPretImpYo3 [i r "("] -> iera || _ 1;
+define SubjPretImpTu3 [i r "("] -> ieras || _ 2;
+define SubjPretImpElla3 [i r "("] -> iera || _ 3;
+define SubjPretImpNos3 [i r "("] -> iéramos || _ 4;
+define SubjPretImpVos3 [i r "("] -> ierais || _ 5;
+define SubjPretImpUst3 [i r "("] -> ieran || _ 6;
+
+define SubjPretImpYo33 [i r "(" "("] -> iese || _ 1;
+define SubjPretImpTu33 [i r "(" "("] -> ieses || _ 2;
+define SubjPretImpElla33 [i r "(" "("] -> iese || _ 3;
+define SubjPretImpNos33 [i r "(" "("] -> iésemos || _ 4;
+define SubjPretImpVos33 [i r "(" "("] -> ieseis || _ 5;
+define SubjPretImpUst33 [i r "(" "("] -> iesen || _ 6;
+
+
+define SubjPretImp1 SubjPretImpYo1 .o. SubjPretImpTu1 .o. SubjPretImpElla1 .o. SubjPretImpNos1 .o. SubjPretImpVos1 .o. SubjPretImpUst1;
+define SubjPretImp11 SubjPretImpYo11 .o. SubjPretImpTu11 .o. SubjPretImpElla11 .o. SubjPretImpNos11 .o. SubjPretImpVos11 .o. SubjPretImpUst11;
+
+define SubjPretImp2 SubjPretImpYo2 .o. SubjPretImpTu2 .o. SubjPretImpElla2 .o. SubjPretImpNos2 .o. SubjPretImpVos2 .o. SubjPretImpUst2;
+define SubjPretImp22 SubjPretImpYo22 .o. SubjPretImpTu22 .o. SubjPretImpElla22 .o. SubjPretImpNos22 .o. SubjPretImpVos22 .o. SubjPretImpUst22;
+
+define SubjPretImp3 SubjPretImpYo3 .o. SubjPretImpTu3 .o. SubjPretImpElla3 .o. SubjPretImpNos3 .o. SubjPretImpVos3 .o. SubjPretImpUst3;
+define SubjPretImp33 SubjPretImpYo33 .o. SubjPretImpTu33 .o. SubjPretImpElla33 .o. SubjPretImpNos33 .o. SubjPretImpVos33 .o. SubjPretImpUst33;
+
+define SubjPretImp SubjPretImp11 .o. SubjPretImp1 .o. SubjPretImp22 .o. SubjPretImp2 .o. SubjPretImp33 .o. SubjPretImp3;
+
