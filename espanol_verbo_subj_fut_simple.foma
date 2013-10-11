@@ -1,0 +1,27 @@
+define SubjFutSimpleYo1 [a r ")"] -> are || _ 1;
+define SubjFutSimpleTu1 [a r ")"] -> ares || _ 2;
+define SubjFutSimpleElla1 [a r ")"] -> are || _ 3;
+define SubjFutSimpleNos1 [a r ")"] -> áremos || _ 4;
+define SubjFutSimpleVos1 [a r ")"] -> areis || _ 5;
+define SubjFutSimpleUst1 [a r ")"] -> aren || _ 6;
+
+define SubjFutSimpleYo2 [e r ")"] -> iere || _ 1;
+define SubjFutSimpleTu2 [e r ")"] -> ieres || _ 2;
+define SubjFutSimpleElla2 [e r ")"] -> iere || _ 3;
+define SubjFutSimpleNos2 [e r ")"] -> iéremos || _ 4;
+define SubjFutSimpleVos2 [e r ")"] -> iereis || _ 5;
+define SubjFutSimpleUst2 [e r ")"] -> ieren || _ 6;
+
+define SubjFutSimpleYo3 [i r ")"] -> iere || _ 1;
+define SubjFutSimpleTu3 [i r ")"] -> ieres || _ 2;
+define SubjFutSimpleElla3 [i r ")"] -> iere || _ 3;
+define SubjFutSimpleNos3 [i r ")"] -> iéremos|| _ 4;
+define SubjFutSimpleVos3 [i r ")"] -> iereis || _ 5;
+define SubjFutSimpleUst3 [i r ")"] -> ieren || _ 6;
+
+define SubjFutSimple1 SubjFutSimpleYo1 .o. SubjFutSimpleTu1 .o. SubjFutSimpleElla1 .o. SubjFutSimpleNos1 .o. SubjFutSimpleVos1 .o. SubjFutSimpleUst1;
+define SubjFutSimple2 SubjFutSimpleYo2 .o. SubjFutSimpleTu2 .o. SubjFutSimpleElla2 .o. SubjFutSimpleNos2 .o. SubjFutSimpleVos2 .o. SubjFutSimpleUst2;
+define SubjFutSimple3 SubjFutSimpleYo3 .o. SubjFutSimpleTu3 .o. SubjFutSimpleElla3 .o. SubjFutSimpleNos3 .o. SubjFutSimpleVos3 .o. SubjFutSimpleUst3;
+
+define SubjFutSimple SubjFutSimple1 .o. SubjFutSimple2 .o. SubjFutSimple3;
+
