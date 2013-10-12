@@ -715,10 +715,193 @@ define ExceptionsSPIMA [
 	ExceptionANDARforSPIMA 
 ];
 
+#---------------------SPRES----------------------------------
+define ExceptionCAERforSPRES [
+	[{caer} "+V" "+SPRES" "+YO" .x. {caiga}] |
+	[{caer} "+V" "+SPRES" "+TU" .x. {caigas}] |
+	[{caer} "+V" "+SPRES" "+ELLA" .x. {caiga}] |
+	[{caer} "+V" "+SPRES" "+NOS" .x. {caigamos}] |
+	[{caer} "+V" "+SPRES" "+VOS" .x. {caigáis}] |
+	[{caer} "+V" "+SPRES" "+UST" .x. {caigan}]
+];
+
+define ExceptionDARforSPRES [
+	[{dar} "+V" "+SPRES" "+YO" .x. {dé}] |
+	[{dar} "+V" "+SPRES" "+TU" .x. {des}] |
+	[{dar} "+V" "+SPRES" "+ELLA" .x. {dé}] |
+	[{dar} "+V" "+SPRES" "+NOS" .x. {demos}] |
+	[{dar} "+V" "+SPRES" "+VOS" .x. {deis}] |
+	[{dar} "+V" "+SPRES" "+UST" .x. {den}]
+];
+
+define ExceptionDECIRforSPRES [
+	[{decir} "+V" "+SPRES" "+YO" .x. {diga}] |
+	[{decir} "+V" "+SPRES" "+TU" .x. {digas}] |
+	[{decir} "+V" "+SPRES" "+ELLA" .x. {diga}] |
+	[{decir} "+V" "+SPRES" "+NOS" .x. {digamos}] |
+	[{decir} "+V" "+SPRES" "+VOS" .x. {digaís}] |
+	[{decir} "+V" "+SPRES" "+UST" .x. {digan}]
+];
+
+define ExceptionESTARforSPRES [
+	[{estar} "+V" "+SPRES" "+YO" .x. {esté}] |
+	[{estar} "+V" "+SPRES" "+TU" .x. {estés}] |
+	[{estar} "+V" "+SPRES" "+ELLA" .x. {esté}] |
+	[{estar} "+V" "+SPRES" "+NOS" .x. {estemos}] |
+	[{estar} "+V" "+SPRES" "+VOS" .x. {estéis}] |
+	[{estar} "+V" "+SPRES" "+UST" .x. {estén}]
+];
+
+define ExceptionHABERforSPRES [
+	[{haber} "+V" "+SPRES" "+YO" .x. {haya}] |
+	[{haber} "+V" "+SPRES" "+TU" .x. {hayas}] |
+	[{haber} "+V" "+SPRES" "+ELLA" .x. {haya}] |
+	[{haber} "+V" "+SPRES" "+NOS" .x. {hayamos}] |
+	[{haber} "+V" "+SPRES" "+VOS" .x. {hayáis}] |
+	[{haber} "+V" "+SPRES" "+UST" .x. {hayan}]
+];
+
+define ExceptionHACERforSPRES [
+	[{hacer} "+V" "+SPRES" "+YO" .x. {haga}] |
+	[{hacer} "+V" "+SPRES" "+TU" .x. {hagas}] |
+	[{hacer} "+V" "+SPRES" "+ELLA" .x. {haga}] |
+	[{hacer} "+V" "+SPRES" "+NOS" .x. {hagamos}] |
+	[{hacer} "+V" "+SPRES" "+VOS" .x. {hagáis}] |
+	[{hacer} "+V" "+SPRES" "+UST" .x. {hagan}]
+];
+
+define ExceptionIRforSPRES [
+	[{ir} "+V" "+SPRES" "+YO" .x. {vaya}] |
+	[{ir} "+V" "+SPRES" "+TU" .x. {vayas}] |
+	[{ir} "+V" "+SPRES" "+ELLA" .x. {vaya}] |
+	[{ir} "+V" "+SPRES" "+NOS" .x. {vayamos}] |
+	[{ir} "+V" "+SPRES" "+VOS" .x. {vayáis}] |
+	[{ir} "+V" "+SPRES" "+UST" .x. {vayan}]
+];
+
+define ExceptionOÍRforSPRES [
+	[{oír} "+V" "+SPRES" "+YO" .x. {oiga}] |
+	[{oír} "+V" "+SPRES" "+TU" .x. {oigas}] |
+	[{oír} "+V" "+SPRES" "+ELLA" .x. {oiga}] |
+	[{oír} "+V" "+SPRES" "+NOS" .x. {oigamos}] |
+	[{oír} "+V" "+SPRES" "+VOS" .x. {oigáis}] |
+	[{oír} "+V" "+SPRES" "+UST" .x. {oigan}]
+];
+
+define ExceptionPODERforSPRES [
+	[{poder} "+V" "+SPRES" "+YO" .x. {pueda}] |
+	[{poder} "+V" "+SPRES" "+TU" .x. {puedas}] |
+	[{poder} "+V" "+SPRES" "+ELLA" .x. {pueda}] |
+	[{poder} "+V" "+SPRES" "+NOS" .x. {podamos}] |
+	[{poder} "+V" "+SPRES" "+VOS" .x. {podáis}] |
+	[{poder} "+V" "+SPRES" "+UST" .x. {puedan}]
+];
+
+
+define ExceptionPONERforSPRES [
+	[{poner} "+V" "+SPRES" "+YO" .x. {ponga}] |
+	[{poner} "+V" "+SPRES" "+TU" .x. {pongas}] |
+	[{poner} "+V" "+SPRES" "+ELLA" .x. {ponga}] |
+	[{poner} "+V" "+SPRES" "+NOS" .x. {pongamos}] |
+	[{poner} "+V" "+SPRES" "+VOS" .x. {pongáis}] |
+	[{poner} "+V" "+SPRES" "+UST" .x. {pongan}]
+];
+
+define ExceptionQUERERforSPRES [
+	[{querer} "+V" "+SPRES" "+YO" .x. {quiera}] |
+	[{querer} "+V" "+SPRES" "+TU" .x. {quieras}] |
+	[{querer} "+V" "+SPRES" "+ELLA" .x. {quiera}] |
+	[{querer} "+V" "+SPRES" "+NOS" .x. {queramos}] |
+	[{querer} "+V" "+SPRES" "+VOS" .x. {queráis}] |
+	[{querer} "+V" "+SPRES" "+UST" .x. {quieran}]
+];
+
+define ExceptionSABERforSPRES [
+	[{saber} "+V" "+SPRES" "+YO" .x. {sepa}] |
+	[{saber} "+V" "+SPRES" "+TU" .x. {sepas}] |
+	[{saber} "+V" "+SPRES" "+ELLA" .x. {sepa}] |
+	[{saber} "+V" "+SPRES" "+NOS" .x. {sepamos}] |
+	[{saber} "+V" "+SPRES" "+VOS" .x. {sepáis}] |
+	[{saber} "+V" "+SPRES" "+UST" .x. {sepan}]
+];
+
+
+define ExceptionSERforSPRES [
+	[{ser} "+V" "+SPRES" "+YO" .x. {sea}] |
+	[{ser} "+V" "+SPRES" "+TU" .x. {seas}] |
+	[{ser} "+V" "+SPRES" "+ELLA" .x. {sea}] |
+	[{ser} "+V" "+SPRES" "+NOS" .x. {seamos}] |
+	[{ser} "+V" "+SPRES" "+VOS" .x. {seáis}] |
+	[{ser} "+V" "+SPRES" "+UST" .x. {sean}]
+];
+
+
+define ExceptionTENERforSPRES [
+	[{tener} "+V" "+SPRES" "+YO" .x. {tenga}] |
+	[{tener} "+V" "+SPRES" "+TU" .x. {tengas}] |
+	[{tener} "+V" "+SPRES" "+ELLA" .x. {tenga}] |
+	[{tener} "+V" "+SPRES" "+NOS" .x. {tengamos}] |
+	[{tener} "+V" "+SPRES" "+VOS" .x. {tengáis}] |
+	[{tener} "+V" "+SPRES" "+UST" .x. {tengan}]
+];
+
+
+define ExceptionTRAERforSPRES [
+	[{traer} "+V" "+SPRES" "+YO" .x. {traiga}] |
+	[{traer} "+V" "+SPRES" "+TU" .x. {traigas}] |
+	[{traer} "+V" "+SPRES" "+ELLA" .x. {traiga}] |
+	[{traer} "+V" "+SPRES" "+NOS" .x. {traigamos}] |
+	[{traer} "+V" "+SPRES" "+VOS" .x. {traigáis}] |
+	[{traer} "+V" "+SPRES" "+UST" .x. {traigan}]
+];
+
+
+define ExceptionVENIRforSPRES [
+	[{venir} "+V" "+SPRES" "+YO" .x. {venga}] |
+	[{venir} "+V" "+SPRES" "+TU" .x. {vengas}] |
+	[{venir} "+V" "+SPRES" "+ELLA" .x. {venga}] |
+	[{venir} "+V" "+SPRES" "+NOS" .x. {vengamos}] |
+	[{venir} "+V" "+SPRES" "+VOS" .x. {vengás}] |
+	[{venir} "+V" "+SPRES" "+UST" .x. {vengan}]
+];
+
+
+define ExceptionVERforSPRES [
+	[{ver} "+V" "+SPRES" "+YO" .x. {vea}] |
+	[{ver} "+V" "+SPRES" "+TU" .x. {veas}] |
+	[{ver} "+V" "+SPRES" "+ELLA" .x. {vea}] |
+	[{ver} "+V" "+SPRES" "+NOS" .x. {veamos}] |
+	[{ver} "+V" "+SPRES" "+VOS" .x. {veáis}] |
+	[{ver} "+V" "+SPRES" "+UST" .x. {vean}]
+];
+
+
+define ExceptionsSPRES 		[
+	ExceptionVERforSPRES 	|
+	ExceptionVENIRforSPRES 	|
+	ExceptionTRAERforSPRES 	|
+	ExceptionTENERforSPRES 	|
+	ExceptionSERforSPRES 	|
+	ExceptionSABERforSPRES 	|
+	ExceptionQUERERforSPRES |
+	ExceptionPONERforSPRES 	|
+	ExceptionPODERforSPRES 	|
+	ExceptionOÍRforSPRES 	|
+	ExceptionIRforSPRES 	|
+	ExceptionHACERforSPRES 	|
+	ExceptionHABERforSPRES 	|
+	ExceptionESTARforSPRES 	|
+	ExceptionDECIRforSPRES 	|
+	ExceptionDARforSPRES 	|
+	ExceptionCAERforSPRES 
+] ;
+
 #---------------------WHOLE----------------------------------
 define ExceptionVerbo [
+	ExceptionsSPRES |
 	ExceptionsIPIMP |
 	ExceptionsSPIMA |
 	ExceptionsIPRES |
 	ExceptionsIFUTU |
-	ExceptionsIPIND ]; 
+	ExceptionsIPIND 
+]; 
