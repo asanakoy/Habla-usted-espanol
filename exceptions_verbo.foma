@@ -224,6 +224,89 @@ define ExcepitionsIPIND [
 
 
 #---------------------IFUTU----------------------------------
+
+define ExceptionDECIRforIFUTU [
+	[{decir} "+V" "+IFUTU" "+YO" .x. {diré}] |
+	[{decir} "+V" "+IFUTU" "+TU" .x. {dirás}] |
+	[{decir} "+V" "+IFUTU" "+ELLA" .x. {dirá}] |
+	[{decir} "+V" "+IFUTU" "+NOS" .x. {diremos}] |
+	[{decir} "+V" "+IFUTU" "+VOS" .x. {diréis}] |
+	[{decir} "+V" "+IFUTU" "+UST" .x. {dirán}]
+] ;
+
+define ExceptionHABERforIFUTU [
+	[{haber} "+V" "+IFUTU" "+YO" .x. {habré}] |
+	[{haber} "+V" "+IFUTU" "+TU" .x. {habrás}] |
+	[{haber} "+V" "+IFUTU" "+ELLA" .x. {habrá}] |
+	[{haber} "+V" "+IFUTU" "+NOS" .x. {habremos}] |
+	[{haber} "+V" "+IFUTU" "+VOS" .x. {habréis}] |
+	[{haber} "+V" "+IFUTU" "+UST" .x. {habrán}]
+] ;
+
+define ExceptionHACERforIFUTU [
+	[{hacer} "+V" "+IFUTU" "+YO" .x. {haré}] |
+	[{hacer} "+V" "+IFUTU" "+TU" .x. {harás}] |
+	[{hacer} "+V" "+IFUTU" "+ELLA" .x. {haré}] |
+	[{hacer} "+V" "+IFUTU" "+NOS" .x. {haremos}] |
+	[{hacer} "+V" "+IFUTU" "+VOS" .x. {haréis}] |
+	[{hacer} "+V" "+IFUTU" "+UST" .x. {harán}]
+] ;
+
+define ExceptionPODERforIFUTU [
+	[{poder} "+V" "+IFUTU" "+YO" .x. {podré}] |
+	[{poder} "+V" "+IFUTU" "+TU" .x. {podrás}] |
+	[{poder} "+V" "+IFUTU" "+ELLA" .x. {podrá}] |
+	[{poder} "+V" "+IFUTU" "+NOS" .x. {podremos}] |
+	[{poder} "+V" "+IFUTU" "+VOS" .x. {podréis}] |
+	[{poder} "+V" "+IFUTU" "+UST" .x. {podrán}]
+] ;
+
+define ExceptionPONERforIFUTU [
+	[{poner} "+V" "+IFUTU" "+YO" .x. {pondré}] |
+	[{poner} "+V" "+IFUTU" "+TU" .x. {pondrás}] |
+	[{poner} "+V" "+IFUTU" "+ELLA" .x. {pondrá}] |
+	[{poner} "+V" "+IFUTU" "+NOS" .x. {pondremos}] |
+	[{poner} "+V" "+IFUTU" "+VOS" .x. {pondréis}] |
+	[{poner} "+V" "+IFUTU" "+UST" .x. {pondrán}]
+] ;
+
+
+define ExceptionQUERERforIFUTU [
+	[{querer} "+V" "+IFUTU" "+YO" .x. {querré}] |
+	[{querer} "+V" "+IFUTU" "+TU" .x. {querrás}] |
+	[{querer} "+V" "+IFUTU" "+ELLA" .x. {querrá}] |
+	[{querer} "+V" "+IFUTU" "+NOS" .x. {querremos}] |
+	[{querer} "+V" "+IFUTU" "+VOS" .x. {querréis}] |
+	[{querer} "+V" "+IFUTU" "+UST" .x. {querrán}]
+] ;
+
+define ExceptionSABERforIFUTU [
+	[{saber} "+V" "+IFUTU" "+YO" .x. {sabré}] |
+	[{saber} "+V" "+IFUTU" "+TU" .x. {sabrás}] |
+	[{saber} "+V" "+IFUTU" "+ELLA" .x. {sabrá}] |
+	[{saber} "+V" "+IFUTU" "+NOS" .x. {sabremos}] |
+	[{saber} "+V" "+IFUTU" "+VOS" .x. {sabréis}] |
+	[{saber} "+V" "+IFUTU" "+UST" .x. {sabrán}]
+] ;
+
+define ExceptionSALIRforIFUTU [
+	[{salir} "+V" "+IFUTU" "+YO" .x. {saldré}] |
+	[{salir} "+V" "+IFUTU" "+TU" .x. {saldrás}] |
+	[{salir} "+V" "+IFUTU" "+ELLA" .x. {saldrá}] |
+	[{salir} "+V" "+IFUTU" "+NOS" .x. {saldremos}] |
+	[{salir} "+V" "+IFUTU" "+VOS" .x. {saldréis}] |
+	[{salir} "+V" "+IFUTU" "+UST" .x. {saldrán}]
+] ;
+
+define ExceptionTENERforIFUTU [
+	[{tener} "+V" "+IFUTU" "+YO" .x. {tendré}] |
+	[{tener} "+V" "+IFUTU" "+TU" .x. {tendrás}] |
+	[{tener} "+V" "+IFUTU" "+ELLA" .x. {tendrá}] |
+	[{tener} "+V" "+IFUTU" "+NOS" .x. {tendremos}] |
+	[{tener} "+V" "+IFUTU" "+VOS" .x. {tendréis}] |
+	[{tener} "+V" "+IFUTU" "+UST" .x. {tendrán}]
+] ;
+
 define ExceptionVENIRforIFUTU [
 	[{venir} "+V" "+IFUTU" "+YO" .x. {vendré}] |
 	[{venir} "+V" "+IFUTU" "+TU" .x. {vendrás}] |
