@@ -1,0 +1,7 @@
+define PartPas1 [a r "&" "&"] ->  [a d o];
+
+define PartPas2 [e r "&" "&"] -> [i d o];
+
+define PartPas3 [i r "&" "&"] -> [i d o];
+
+define PartPas PartPas1 .o. PartPas2 .o. PartPas3;
