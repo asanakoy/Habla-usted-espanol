@@ -2168,9 +2168,9 @@ LEXICON VInf
 +V+SPIMA+UST:((6 
 
 +V+POTI+YO:$$1  #;
-+V+POTI+TU:$$1 #;
-+V+POTI+ELLA:$$1 #;
-+V+POTI+NOS:$$1 #;
-+V+POTI+VOS:$$1 #;
-+V+POTI+UST:$$1 #;
++V+POTI+TU:$$2 #;
++V+POTI+ELLA:$$3 #;
++V+POTI+NOS:$$4 #;
++V+POTI+VOS:$$5 #;
++V+POTI+UST:$$6 #;
 
