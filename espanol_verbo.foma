@@ -20,6 +20,8 @@ source espanol_verbo_subj_fut_simple.foma
 
 source espanol_verbo_potencial_imp.foma
 
+source espanol_verbo_participio_passado.foma
+
 define FullVerboGrammar Lexicon
                         .o. PresInd
                         .o. PretImpInd
@@ -29,6 +31,7 @@ define FullVerboGrammar Lexicon
                         .o. SubjPretImp
                         .o. SubjFutSimple
                         .o. PotencImp
+                        .o. PartPas
                         .o. DigitsDelete;
 
 regex FullVerboGrammar;
