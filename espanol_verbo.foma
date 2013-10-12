@@ -18,6 +18,8 @@ source espanol_verbo_subj_pret_imp.foma
 
 source espanol_verbo_subj_fut_simple.foma
 
+source espanol_verbo_potencial_imp.foma
+
 define FullVerboGrammar Lexicon
                         .o. PresInd
                         .o. PretImpInd
@@ -26,11 +28,8 @@ define FullVerboGrammar Lexicon
                         .o. PresSubj
                         .o. SubjPretImp
                         .o. SubjFutSimple
-                        .o. DigitsDelete
-                        .o. HatDelete
-                        .o. PercentDelete
-                        .o. StarDelete
-                        .o. BangDelete;
+                        .o. PotencImp
+                        .o. DigitsDelete;
 
 regex FullVerboGrammar;
 
