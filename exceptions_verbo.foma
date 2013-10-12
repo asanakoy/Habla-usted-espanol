@@ -1,0 +1,239 @@
+
+#--------------------------IPIMP-------------------------
+
+define ExceptionIRforIPIMP [
+	[{ir} "+V" "+IPIMP" "+YO" .x. {iba}] |
+	[{ir} "+V" "+IPIMP" "+TU" .x. {ibas}] |
+	[{ir} "+V" "+IPIMP" "+ELLA" .x. {iba}] |
+	[{ir} "+V" "+IPIMP" "+NOS" .x. {íbamos}] |
+	[{ir} "+V" "+IPIMP" "+VOS" .x. {ibais}] |
+	[{ir} "+V" "+IPIMP" "+UST" .x. {iban}]
+] ;
+
+define ExceptionSERforIPIMP [
+	[{ser} "+V" "+IPIMP" "+YO" .x. {era}] |
+	[{ser} "+V" "+IPIMP" "+TU" .x. {eras}] |
+	[{ser} "+V" "+IPIMP" "+ELLA" .x. {éramos}] |
+	[{ser} "+V" "+IPIMP" "+NOS" .x. {íbamos}] |
+	[{ser} "+V" "+IPIMP" "+VOS" .x. {erais}] |
+	[{ser} "+V" "+IPIMP" "+UST" .x. {eran}]
+] ;
+
+define ExceptionVERforIPIMP [
+	[{ver} "+V" "+IPIMP" "+YO" .x. {veía}] |
+	[{ver} "+V" "+IPIMP" "+TU" .x. {veías}] |
+	[{ver} "+V" "+IPIMP" "+ELLA" .x. {veía}] |
+	[{ver} "+V" "+IPIMP" "+NOS" .x. {veíamos}] |
+	[{ver} "+V" "+IPIMP" "+VOS" .x. {veíais}] |
+	[{ver} "+V" "+IPIMP" "+UST" .x. {veían}]
+] ;
+
+define ExceptionsIPIMP [ 
+	ExceptionIRforIPIMP 	| 
+	ExceptionSERforIPIMP 	| 
+	ExceptionVERforIPIMP 	] ;
+
+#----------------------IPIND-----------------------------
+
+define ExceptionANDARforIPIND [
+	[{andar} "+V" "+IPIND" "+YO" .x. {anduve}] |
+	[{andar} "+V" "+IPIND" "+TU" .x. {anduviste}] |
+	[{andar} "+V" "+IPIND" "+ELLA" .x. {anduvo}] |
+	[{andar} "+V" "+IPIND" "+NOS" .x. {anduvimos}] |
+	[{andar} "+V" "+IPIND" "+VOS" .x. {anduvisteis}] |
+	[{andar} "+V" "+IPIND" "+UST" .x. {anduvieron}]
+] ;
+
+
+define ExceptionCAERforIPIND [
+	[{caer} "+V" "+IPIND" "+YO" .x. {caí}] |
+	[{caer} "+V" "+IPIND" "+TU" .x. {caiste}] |
+	[{caer} "+V" "+IPIND" "+ELLA" .x. {cayó}] |
+	[{caer} "+V" "+IPIND" "+NOS" .x. {caímos}] |
+	[{caer} "+V" "+IPIND" "+VOS" .x. {caísteis}] |
+	[{caer} "+V" "+IPIND" "+UST" .x. {cayeron}]
+] ;
+
+define ExceptionDARforIPIND [
+	[{dar} "+V" "+IPIND" "+YO" .x. {di}] |
+	[{dar} "+V" "+IPIND" "+TU" .x. {diste}] |
+	[{dar} "+V" "+IPIND" "+ELLA" .x. {dio}] |
+	[{dar} "+V" "+IPIND" "+NOS" .x. {dimos}] |
+	[{dar} "+V" "+IPIND" "+VOS" .x. {disteis}] |
+	[{dar} "+V" "+IPIND" "+UST" .x. {dieron}]
+] ;
+
+	
+define ExceptionDECIRforIPIND [
+	[{decir} "+V" "+IPIND" "+YO" .x. {dije}] |
+	[{decir} "+V" "+IPIND" "+TU" .x. {dijiste}] |
+	[{decir} "+V" "+IPIND" "+ELLA" .x. {dijo}] |
+	[{decir} "+V" "+IPIND" "+NOS" .x. {dijimos}] |
+	[{decir} "+V" "+IPIND" "+VOS" .x. {dijisteis}] |
+	[{decir} "+V" "+IPIND" "+UST" .x. {dijeron}]
+] ;
+
+define ExceptionESTARforIPIND [
+	[{estar} "+V" "+IPIND" "+YO" .x. {estuve}] |
+	[{estar} "+V" "+IPIND" "+TU" .x. {estuviste}] |
+	[{estar} "+V" "+IPIND" "+ELLA" .x. {estuvo}] |
+	[{estar} "+V" "+IPIND" "+NOS" .x. {estuvimos}] |
+	[{estar} "+V" "+IPIND" "+VOS" .x. {estuvisteis}] |
+	[{estar} "+V" "+IPIND" "+UST" .x. {estuvieron}]
+] ;
+
+define ExceptionHABERforIPIND [
+	[{haber} "+V" "+IPIND" "+YO" .x. {hube}] |
+	[{haber} "+V" "+IPIND" "+TU" .x. {hubiste}] |
+	[{haber} "+V" "+IPIND" "+ELLA" .x. {hubo}] |
+	[{haber} "+V" "+IPIND" "+NOS" .x. {hubimos}] |
+	[{haber} "+V" "+IPIND" "+VOS" .x. {hubisteis}] |
+	[{haber} "+V" "+IPIND" "+UST" .x. {hubieron}]
+] ;
+
+define ExceptionHACERforIPIND [
+	[{hacer} "+V" "+IPIND" "+YO" .x. {hice}] |
+	[{hacer} "+V" "+IPIND" "+TU" .x. {hiciste}] |
+	[{hacer} "+V" "+IPIND" "+ELLA" .x. {hizo}] |
+	[{hacer} "+V" "+IPIND" "+NOS" .x. {hicimos}] |
+	[{hacer} "+V" "+IPIND" "+VOS" .x. {hicisteis}] |
+	[{hacer} "+V" "+IPIND" "+UST" .x. {hicieron}]
+] ;
+
+define ExceptionIRforIPIND [
+	[{ir} "+V" "+IPIND" "+YO" .x. {fui}] |
+	[{ir} "+V" "+IPIND" "+TU" .x. {fuiste}] |
+	[{ir} "+V" "+IPIND" "+ELLA" .x. {fue}] |
+	[{ir} "+V" "+IPIND" "+NOS" .x. {fuimos}] |
+	[{ir} "+V" "+IPIND" "+VOS" .x. {fuisteis}] |
+	[{ir} "+V" "+IPIND" "+UST" .x. {fueron}]
+] ;
+
+define ExceptionOÍRforIPIND [
+	[{oír} "+V" "+IPIND" "+YO" .x. {oí}] |
+	[{oír} "+V" "+IPIND" "+TU" .x. {oíste}] |
+	[{oír} "+V" "+IPIND" "+ELLA" .x. {oyó}] |
+	[{oír} "+V" "+IPIND" "+NOS" .x. {oímos}] |
+	[{oír} "+V" "+IPIND" "+VOS" .x. {oísteis}] |
+	[{oír} "+V" "+IPIND" "+UST" .x. {oyeron}]
+] ;
+
+
+define ExceptionPODERforIPIND [
+	[{poder} "+V" "+IPIND" "+YO" .x. {pude}] |
+	[{poder} "+V" "+IPIND" "+TU" .x. {pudiste}] |
+	[{poder} "+V" "+IPIND" "+ELLA" .x. {pudo}] |
+	[{poder} "+V" "+IPIND" "+NOS" .x. {pudimos}] |
+	[{poder} "+V" "+IPIND" "+VOS" .x. {pudisteis}] |
+	[{poder} "+V" "+IPIND" "+UST" .x. {pudieron}]
+] ;
+
+define ExceptionPONERforIPIND [
+	[{poner} "+V" "+IPIND" "+YO" .x. {puse}] |
+	[{poner} "+V" "+IPIND" "+TU" .x. {pusiste}] |
+	[{poner} "+V" "+IPIND" "+ELLA" .x. {puso}] |
+	[{poner} "+V" "+IPIND" "+NOS" .x. {pusimos}] |
+	[{poner} "+V" "+IPIND" "+VOS" .x. {pusisteis}] |
+	[{poner} "+V" "+IPIND" "+UST" .x. {pusieron}]
+] ;
+
+define ExceptionQUERERforIPIND [
+	[{querer} "+V" "+IPIND" "+YO" .x. {quise}] |
+	[{querer} "+V" "+IPIND" "+TU" .x. {quisiste}] |
+	[{querer} "+V" "+IPIND" "+ELLA" .x. {quiso}] |
+	[{querer} "+V" "+IPIND" "+NOS" .x. {quisimos}] |
+	[{querer} "+V" "+IPIND" "+VOS" .x. {quisisteis}] |
+	[{querer} "+V" "+IPIND" "+UST" .x. {quisieron}]
+] ;
+
+define ExceptionSABERforIPIND [
+	[{saber} "+V" "+IPIND" "+YO" .x. {supe}] |
+	[{saber} "+V" "+IPIND" "+TU" .x. {supiste}] |
+	[{saber} "+V" "+IPIND" "+ELLA" .x. {supo}] |
+	[{saber} "+V" "+IPIND" "+NOS" .x. {supimos}] |
+	[{saber} "+V" "+IPIND" "+VOS" .x. {supisteis}] |
+	[{saber} "+V" "+IPIND" "+UST" .x. {supieron}]
+] ;
+
+
+define ExceptionSERforIPIND [
+	[{ser} "+V" "+IPIND" "+YO" .x. {fui}] |
+	[{ser} "+V" "+IPIND" "+TU" .x. {fuiste}] |
+	[{ser} "+V" "+IPIND" "+ELLA" .x. {fue}] |
+	[{ser} "+V" "+IPIND" "+NOS" .x. {fuimos}] |
+	[{ser} "+V" "+IPIND" "+VOS" .x. {fuisteis}] |
+	[{ser} "+V" "+IPIND" "+UST" .x. {fueron}]
+] ;
+
+define ExceptionTENERforIPIND [
+	[{tener} "+V" "+IPIND" "+YO" .x. {tuve}] |
+	[{tener} "+V" "+IPIND" "+TU" .x. {tuviste}] |
+	[{tener} "+V" "+IPIND" "+ELLA" .x. {tuvo}] |
+	[{tener} "+V" "+IPIND" "+NOS" .x. {tuvimos}] |
+	[{tener} "+V" "+IPIND" "+VOS" .x. {tuvisteis}] |
+	[{tener} "+V" "+IPIND" "+UST" .x. {tuvieron}]
+] ;
+
+
+define ExceptionTRAERforIPIND [
+	[{traer} "+V" "+IPIND" "+YO" .x. {traje}] |
+	[{traer} "+V" "+IPIND" "+TU" .x. {trajiste}] |
+	[{traer} "+V" "+IPIND" "+ELLA" .x. {trajo}] |
+	[{traer} "+V" "+IPIND" "+NOS" .x. {trajimos}] |
+	[{traer} "+V" "+IPIND" "+VOS" .x. {trajisteis}] |
+	[{traer} "+V" "+IPIND" "+UST" .x. {trajeron}]
+] ;
+
+define ExceptionVENIRforIPIND [
+	[{venir} "+V" "+IPIND" "+YO" .x. {vine}] |
+	[{venir} "+V" "+IPIND" "+TU" .x. {viniste}] |
+	[{venir} "+V" "+IPIND" "+ELLA" .x. {vino}] |
+	[{venir} "+V" "+IPIND" "+NOS" .x. {vinimos}] |
+	[{venir} "+V" "+IPIND" "+VOS" .x. {vinisteis}] |
+	[{venir} "+V" "+IPIND" "+UST" .x. {vinieron}]
+] ;
+
+define ExceptionVERforIPIND [
+	[{ver} "+V" "+IPIND" "+YO" .x. {vi}] |
+	[{ver} "+V" "+IPIND" "+TU" .x. {viste}] |
+	[{ver} "+V" "+IPIND" "+ELLA" .x. {vio}] |
+	[{ver} "+V" "+IPIND" "+NOS" .x. {vimos}] |
+	[{ver} "+V" "+IPIND" "+VOS" .x. {visteis}] |
+	[{ver} "+V" "+IPIND" "+UST" .x. {vieron}]
+] ;
+
+define ExcepitionsIPIND [
+	ExceptionANDARforIPIND	|
+	ExceptionCAERforIPIND 	|
+	ExceptionDARforIPIND 	|
+	ExceptionDECIRforIPIND 	|
+	ExceptionESTARforIPIND 	|
+	ExceptionHABERforIPIND 	|
+	ExceptionHACERforIPIND 	|
+	ExceptionIRforIPIND 	|
+	ExceptionOÍRforIPIND 	|
+	ExceptionPODERforIPIND 	|
+	ExceptionPONERforIPIND 	|
+	ExceptionQUERERforIPIND |
+	ExceptionSABERforIPIND 	|
+	ExceptionSERforIPIND 	|
+	ExceptionTENERforIPIND 	|
+	ExceptionTRAERforIPIND 	|
+	ExceptionVENIRforIPIND 	|
+	ExceptionVERforIPIND ];
+
+
+#---------------------IFUTU----------------------------------
+define ExceptionVENIRforIFUTU [
+	[{venir} "+V" "+IFUTU" "+YO" .x. {vendré}] |
+	[{venir} "+V" "+IFUTU" "+TU" .x. {vendrás}] |
+	[{venir} "+V" "+IFUTU" "+ELLA" .x. {vendrá}] |
+	[{venir} "+V" "+IFUTU" "+NOS" .x. {vendremos}] |
+	[{venir} "+V" "+IFUTU" "+VOS" .x. {vendréis}] |
+	[{venir} "+V" "+IFUTU" "+UST" .x. {vendrán}]
+] ;
+
+#---------------------WHOLE----------------------------------
+define ExceptionVerbo [
+	ExceptionsIPIMP |
+	ExceptionsIPIND ]; 
