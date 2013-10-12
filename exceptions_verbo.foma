@@ -523,9 +523,202 @@ define ExceptionsIPRES [
 	ExceptionVERforIPRES
 ] ;
 
+#---------------------SPIMA----------------------------------
+
+define ExceptionANDARforSPIMA [
+	[{andar} "+V" "+SPIMA" "+YO" .x. {anduviera}] |
+	[{andar} "+V" "+SPIMA" "+TU" .x. {anduvieras}] |
+	[{andar} "+V" "+SPIMA" "+ELLA" .x. {anduviera}] |
+	[{andar} "+V" "+SPIMA" "+NOS" .x. {anduviéramos}] |
+	[{andar} "+V" "+SPIMA" "+VOS" .x. {anduvierais}] |
+	[{andar} "+V" "+SPIMA" "+UST" .x. {anduvieran}]
+] ;
+
+define ExceptionCAERforSPIMA [
+	[{caer} "+V" "+SPIMA" "+YO" .x. {cayera}] |
+	[{caer} "+V" "+SPIMA" "+TU" .x. {cayeras}] |
+	[{caer} "+V" "+SPIMA" "+ELLA" .x. {cayera}] |
+	[{caer} "+V" "+SPIMA" "+NOS" .x. {cayéramos}] |
+	[{caer} "+V" "+SPIMA" "+VOS" .x. {cayerais}] |
+	[{caer} "+V" "+SPIMA" "+UST" .x. {cayeran}]
+] ;
+
+define ExceptionDARforSPIMA [
+	[{dar} "+V" "+SPIMA" "+YO" .x. {diera}] |
+	[{dar} "+V" "+SPIMA" "+TU" .x. {dieras}] |
+	[{dar} "+V" "+SPIMA" "+ELLA" .x. {diera}] |
+	[{dar} "+V" "+SPIMA" "+NOS" .x. {dieramos}] |
+	[{dar} "+V" "+SPIMA" "+VOS" .x. {dierais}] |
+	[{dar} "+V" "+SPIMA" "+UST" .x. {dieran}]
+] ;
+
+define ExceptionDECIRforSPIMA [
+	[{decir} "+V" "+SPIMA" "+YO" .x. {dijera}] |
+	[{decir} "+V" "+SPIMA" "+TU" .x. {dijeras}] |
+	[{decir} "+V" "+SPIMA" "+ELLA" .x. {djiera}] |
+	[{decir} "+V" "+SPIMA" "+NOS" .x. {dijéramos}] |
+	[{decir} "+V" "+SPIMA" "+VOS" .x. {dijerais}] |
+	[{decir} "+V" "+SPIMA" "+UST" .x. {dijeran}]
+] ;
+
+
+define ExceptionESTARforSPIMA [
+	[{estar} "+V" "+SPIMA" "+YO" .x. {estuviera}] |
+	[{estar} "+V" "+SPIMA" "+TU" .x. {estuvieras}] |
+	[{estar} "+V" "+SPIMA" "+ELLA" .x. {estuviera}] |
+	[{estar} "+V" "+SPIMA" "+NOS" .x. {estuviéramos}] |
+	[{estar} "+V" "+SPIMA" "+VOS" .x. {estuvierais}] |
+	[{estar} "+V" "+SPIMA" "+UST" .x. {estuvieran}]
+] ;
+
+
+define ExceptionHABERforSPIMA [
+	[{haber} "+V" "+SPIMA" "+YO" .x. {hubiera}] |
+	[{haber} "+V" "+SPIMA" "+TU" .x. {hubieras}] |
+	[{haber} "+V" "+SPIMA" "+ELLA" .x. {hubiera}] |
+	[{haber} "+V" "+SPIMA" "+NOS" .x. {hubiéramos}] |
+	[{haber} "+V" "+SPIMA" "+VOS" .x. {hubierais}] |
+	[{haber} "+V" "+SPIMA" "+UST" .x. {hubieran}]
+] ;
+
+
+define ExceptionHACERforSPIMA [
+	[{hacer} "+V" "+SPIMA" "+YO" .x. {hiciera}] |
+	[{hacer} "+V" "+SPIMA" "+TU" .x. {hicieras}] |
+	[{hacer} "+V" "+SPIMA" "+ELLA" .x. {hiciera}] |
+	[{hacer} "+V" "+SPIMA" "+NOS" .x. {hiciéramos}] |
+	[{hacer} "+V" "+SPIMA" "+VOS" .x. {hicierais}] |
+	[{hacer} "+V" "+SPIMA" "+UST" .x. {hicieran}]
+] ;
+
+
+define ExceptionIRforSPIMA [
+	[{ir} "+V" "+SPIMA" "+YO" .x. {fuera}] |
+	[{ir} "+V" "+SPIMA" "+TU" .x. {fueras}] |
+	[{ir} "+V" "+SPIMA" "+ELLA" .x. {fuera}] |
+	[{ir} "+V" "+SPIMA" "+NOS" .x. {fuéramos}] |
+	[{ir} "+V" "+SPIMA" "+VOS" .x. {fuerais}] |
+	[{ir} "+V" "+SPIMA" "+UST" .x. {fueran}]
+] ;
+
+define ExceptionOÍRforSPIMA [
+	[{oír} "+V" "+SPIMA" "+YO" .x. {oyera}] |
+	[{oír} "+V" "+SPIMA" "+TU" .x. {oyeras}] |
+	[{oír} "+V" "+SPIMA" "+ELLA" .x. {oyera}] |
+	[{oír} "+V" "+SPIMA" "+NOS" .x. {oyéramos}] |
+	[{oír} "+V" "+SPIMA" "+VOS" .x. {oyerais}] |
+	[{oír} "+V" "+SPIMA" "+UST" .x. {oyeran}]
+] ;
+
+define ExceptionPODERforSPIMA [
+	[{poder} "+V" "+SPIMA" "+YO" .x. {pudiera}] |
+	[{poder} "+V" "+SPIMA" "+TU" .x. {pudieras}] |
+	[{poder} "+V" "+SPIMA" "+ELLA" .x. {pudiera}] |
+	[{poder} "+V" "+SPIMA" "+NOS" .x. {pudiéramos}] |
+	[{poder} "+V" "+SPIMA" "+VOS" .x. {pudierais}] |
+	[{poder} "+V" "+SPIMA" "+UST" .x. {pudieran}]
+] ;
+
+define ExceptionPONERforSPIMA [
+	[{poner} "+V" "+SPIMA" "+YO" .x. {pusiera}] |
+	[{poner} "+V" "+SPIMA" "+TU" .x. {pusieras}] |
+	[{poner} "+V" "+SPIMA" "+ELLA" .x. {pusiera}] |
+	[{poner} "+V" "+SPIMA" "+NOS" .x. {pusiéramos}] |
+	[{poner} "+V" "+SPIMA" "+VOS" .x. {pusierais}] |
+	[{poner} "+V" "+SPIMA" "+UST" .x. {pusieran}]
+] ;
+
+define ExceptionQUERERforSPIMA [
+	[{querer} "+V" "+SPIMA" "+YO" .x. {quisiera}] |
+	[{querer} "+V" "+SPIMA" "+TU" .x. {quisieras}] |
+	[{querer} "+V" "+SPIMA" "+ELLA" .x. {quisiera}] |
+	[{querer} "+V" "+SPIMA" "+NOS" .x. {quisiéramos}] |
+	[{querer} "+V" "+SPIMA" "+VOS" .x. {quisierais}] |
+	[{querer} "+V" "+SPIMA" "+UST" .x. {quisieran}]
+];
+
+define ExceptionSABERforSPIMA [
+	[{saber} "+V" "+SPIMA" "+YO" .x. {supiera}] |
+	[{saber} "+V" "+SPIMA" "+TU" .x. {supieras}] |
+	[{saber} "+V" "+SPIMA" "+ELLA" .x. {supiera}] |
+	[{saber} "+V" "+SPIMA" "+NOS" .x. {supiéramos}] |
+	[{saber} "+V" "+SPIMA" "+VOS" .x. {supierais}] |
+	[{saber} "+V" "+SPIMA" "+UST" .x. {supieran}]
+];
+
+define ExceptionSERforSPIMA [
+	[{ser} "+V" "+SPIMA" "+YO" .x. {fuera}] |
+	[{ser} "+V" "+SPIMA" "+TU" .x. {fueras}] |
+	[{ser} "+V" "+SPIMA" "+ELLA" .x. {fuera}] |
+	[{ser} "+V" "+SPIMA" "+NOS" .x. {fuéramos}] |
+	[{ser} "+V" "+SPIMA" "+VOS" .x. {fuerais}] |
+	[{ser} "+V" "+SPIMA" "+UST" .x. {fueran}]
+];
+
+
+define ExceptionTENERforSPIMA [
+	[{tener} "+V" "+SPIMA" "+YO" .x. {tuviera}] |
+	[{tener} "+V" "+SPIMA" "+TU" .x. {tuvieras}] |
+	[{tener} "+V" "+SPIMA" "+ELLA" .x. {tuviera}] |
+	[{tener} "+V" "+SPIMA" "+NOS" .x. {tuviéramos}] |
+	[{tener} "+V" "+SPIMA" "+VOS" .x. {tuvierais}] |
+	[{tener} "+V" "+SPIMA" "+UST" .x. {tuvieran}]
+];
+
+
+define ExceptionTRAERforSPIMA [
+	[{traer} "+V" "+SPIMA" "+YO" .x. {trajera}] |
+	[{traer} "+V" "+SPIMA" "+TU" .x. {trajeras}] |
+	[{traer} "+V" "+SPIMA" "+ELLA" .x. {trajera}] |
+	[{traer} "+V" "+SPIMA" "+NOS" .x. {trajéramos}] |
+	[{traer} "+V" "+SPIMA" "+VOS" .x. {trajerais}] |
+	[{traer} "+V" "+SPIMA" "+UST" .x. {trajeran}]
+];
+
+define ExceptionVENIRforSPIMA [
+	[{venir} "+V" "+SPIMA" "+YO" .x. {viniera}] |
+	[{venir} "+V" "+SPIMA" "+TU" .x. {vinieras}] |
+	[{venir} "+V" "+SPIMA" "+ELLA" .x. {viniera}] |
+	[{venir} "+V" "+SPIMA" "+NOS" .x. {viniéramos}] |
+	[{venir} "+V" "+SPIMA" "+VOS" .x. {vinierais}] |
+	[{venir} "+V" "+SPIMA" "+UST" .x. {vinieran}]
+];
+
+
+define ExceptionVERforSPIMA [
+	[{ver} "+V" "+SPIMA" "+YO" .x. {viera}] |
+	[{ver} "+V" "+SPIMA" "+TU" .x. {vieras}] |
+	[{ver} "+V" "+SPIMA" "+ELLA" .x. {viera}] |
+	[{ver} "+V" "+SPIMA" "+NOS" .x. {viéramos}] |
+	[{ver} "+V" "+SPIMA" "+VOS" .x. {vierais}] |
+	[{ver} "+V" "+SPIMA" "+UST" .x. {vieran}]
+];
+
+
+define ExceptionsSPIMA [
+	ExceptionVENIRforSPIMA |
+	ExceptionTRAERforSPIMA |
+	ExceptionTENERforSPIMA |
+	ExceptionSERforSPIMA |
+	ExceptionSABERforSPIMA |
+	ExceptionQUERERforSPIMA |
+	ExceptionPONERforSPIMA |
+	ExceptionPODERforSPIMA |
+	ExceptionOÍRforSPIMA |
+	ExceptionIRforSPIMA |
+	ExceptionHACERforSPIMA |
+	ExceptionHABERforSPIMA |
+	ExceptionESTARforSPIMA |
+	ExceptionCAERforSPIMA |
+	ExceptionDARforSPIMA |
+	ExceptionDECIRforSPIMA |
+	ExceptionANDARforSPIMA 
+];
+
 #---------------------WHOLE----------------------------------
 define ExceptionVerbo [
 	ExceptionsIPIMP |
+	ExceptionsSPIMA |
 	ExceptionsIPRES |
 	ExceptionsIFUTU |
 	ExceptionsIPIND ]; 
