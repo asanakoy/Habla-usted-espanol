@@ -243,6 +243,7 @@ define ExceptionHABERforIFUTU [
 	[{haber} "+V" "+IFUTU" "+UST" .x. {habrán}]
 ] ;
 
+
 define ExceptionHACERforIFUTU [
 	[{hacer} "+V" "+IFUTU" "+YO" .x. {haré}] |
 	[{hacer} "+V" "+IFUTU" "+TU" .x. {harás}] |
@@ -280,6 +281,7 @@ define ExceptionQUERERforIFUTU [
 	[{querer} "+V" "+IFUTU" "+UST" .x. {querrán}]
 ] ;
 
+
 define ExceptionSABERforIFUTU [
 	[{saber} "+V" "+IFUTU" "+YO" .x. {sabré}] |
 	[{saber} "+V" "+IFUTU" "+TU" .x. {sabrás}] |
@@ -316,7 +318,214 @@ define ExceptionVENIRforIFUTU [
 	[{venir} "+V" "+IFUTU" "+UST" .x. {vendrán}]
 ] ;
 
+define ExcepitonsIFUTU [
+	ExceptionDECIRforIFUTU  |
+	ExceptionHABERforIFUTU  |
+	ExceptionHACERforIFUTU  |
+	ExceptionPODERforIFUTU  |
+	ExceptionPONERforIFUTU  |
+	ExceptionQUERERforIFUTU |
+	ExceptionSABERforIFUTU  |
+	ExceptionSALIRforIFUTU  |
+	ExceptionTENERforIFUTU  |
+	ExceptionVENIRforIFUTU 
+] ;
+
+#---------------------IPRES----------------------------------
+
+define ExceptionCAERforIPRES [
+	[{caer} "+V" "+IPRES" "+YO" .x. {caigo}] |
+	[{caer} "+V" "+IPRES" "+TU" .x. {caes}] |
+	[{caer} "+V" "+IPRES" "+ELLA" .x. {cae}] |
+	[{caer} "+V" "+IPRES" "+NOS" .x. {caemos}] |
+	[{caer} "+V" "+IPRES" "+VOS" .x. {caéis}] |
+	[{caer} "+V" "+IPRES" "+UST" .x. {caen}]
+] ;
+
+define ExceptionDARforIPRES [
+	[{dar} "+V" "+IPRES" "+YO" .x. {doy}] |
+	[{dar} "+V" "+IPRES" "+TU" .x. {das}] |
+	[{dar} "+V" "+IPRES" "+ELLA" .x. {da}] |
+	[{dar} "+V" "+IPRES" "+NOS" .x. {damos}] |
+	[{dar} "+V" "+IPRES" "+VOS" .x. {dais}] |
+	[{dar} "+V" "+IPRES" "+UST" .x. {dan}]
+] ;
+
+define ExceptionDECIRforIPRES [
+	[{decir} "+V" "+IPRES" "+YO" .x. {digo}] |
+	[{decir} "+V" "+IPRES" "+TU" .x. {dices}] |
+	[{decir} "+V" "+IPRES" "+ELLA" .x. {dice}] |
+	[{decir} "+V" "+IPRES" "+NOS" .x. {decimos}] |
+	[{decir} "+V" "+IPRES" "+VOS" .x. {decís}] |
+	[{decir} "+V" "+IPRES" "+UST" .x. {dicen}]
+] ;
+
+define ExceptionESTARforIPRES [
+	[{estar} "+V" "+IPRES" "+YO" .x. {estoy}] |
+	[{estar} "+V" "+IPRES" "+TU" .x. {estás}] |
+	[{estar} "+V" "+IPRES" "+ELLA" .x. {está}] |
+	[{estar} "+V" "+IPRES" "+NOS" .x. {estamos}] |
+	[{estar} "+V" "+IPRES" "+VOS" .x. {estaís}] |
+	[{estar} "+V" "+IPRES" "+UST" .x. {están}]
+] ;
+
+define ExceptionHABERforIPRES [
+	[{haber} "+V" "+IPRES" "+YO" .x. {he}] |
+	[{haber} "+V" "+IPRES" "+TU" .x. {has}] |
+	[{haber} "+V" "+IPRES" "+ELLA" .x. {ha}] |
+	[{haber} "+V" "+IPRES" "+NOS" .x. {hemos}] |
+	[{haber} "+V" "+IPRES" "+VOS" .x. {habeís}] |
+	[{haber} "+V" "+IPRES" "+UST" .x. {han}]
+] ;
+
+define ExceptionHACERforIPRES [
+	[{hacer} "+V" "+IPRES" "+YO" .x. {hago}] |
+	[{hacer} "+V" "+IPRES" "+TU" .x. {haces}] |
+	[{hacer} "+V" "+IPRES" "+ELLA" .x. {hace}] |
+	[{hacer} "+V" "+IPRES" "+NOS" .x. {hacemos}] |
+	[{hacer} "+V" "+IPRES" "+VOS" .x. {hacéis}] |
+	[{hacer} "+V" "+IPRES" "+UST" .x. {hacen}]
+] ;
+
+define ExceptionIRforIPRES [
+	[{ir} "+V" "+IPRES" "+YO" .x. {voy}] |
+	[{ir} "+V" "+IPRES" "+TU" .x. {vas}] |
+	[{ir} "+V" "+IPRES" "+ELLA" .x. {va}] |
+	[{ir} "+V" "+IPRES" "+NOS" .x. {vamos}] |
+	[{ir} "+V" "+IPRES" "+VOS" .x. {vais}] |
+	[{ir} "+V" "+IPRES" "+UST" .x. {van}]
+] ;
+
+
+define ExceptionOÍRforIPRES [
+	[{oír} "+V" "+IPRES" "+YO" .x. {oígo}] |
+	[{oír} "+V" "+IPRES" "+TU" .x. {oyes}] |
+	[{oír} "+V" "+IPRES" "+ELLA" .x. {oye}] |
+	[{oír} "+V" "+IPRES" "+NOS" .x. {oímos}] |
+	[{oír} "+V" "+IPRES" "+VOS" .x. {oís}] |
+	[{oír} "+V" "+IPRES" "+UST" .x. {oyen}]
+] ;
+
+
+define ExceptionPODERforIPRES [
+	[{poder} "+V" "+IPRES" "+YO" .x. {puedo}] |
+	[{poder} "+V" "+IPRES" "+TU" .x. {puedes}] |
+	[{poder} "+V" "+IPRES" "+ELLA" .x. {puede}] |
+	[{poder} "+V" "+IPRES" "+NOS" .x. {podemos}] |
+	[{poder} "+V" "+IPRES" "+VOS" .x. {podéis}] |
+	[{poder} "+V" "+IPRES" "+UST" .x. {pueden}]
+] ;
+
+
+define ExceptionPONERforIPRES [
+	[{poner} "+V" "+IPRES" "+YO" .x. {pongo}] |
+	[{poner} "+V" "+IPRES" "+TU" .x. {pones}] |
+	[{poner} "+V" "+IPRES" "+ELLA" .x. {pone}] |
+	[{poner} "+V" "+IPRES" "+NOS" .x. {ponemos}] |
+	[{poner} "+V" "+IPRES" "+VOS" .x. {ponéis}] |
+	[{poner} "+V" "+IPRES" "+UST" .x. {ponen}]
+] ;
+
+
+define ExceptionQUERERforIPRES [
+	[{querer} "+V" "+IPRES" "+YO" .x. {quiero}] |
+	[{querer} "+V" "+IPRES" "+TU" .x. {quieres}] |
+	[{querer} "+V" "+IPRES" "+ELLA" .x. {quiere}] |
+	[{querer} "+V" "+IPRES" "+NOS" .x. {queremos}] |
+	[{querer} "+V" "+IPRES" "+VOS" .x. {queréis}] |
+	[{querer} "+V" "+IPRES" "+UST" .x. {quieren}]
+] ;
+
+define ExceptionSABERforIPRES [
+	[{saber} "+V" "+IPRES" "+YO" .x. {sé}] |
+	[{saber} "+V" "+IPRES" "+TU" .x. {sabes}] |
+	[{saber} "+V" "+IPRES" "+ELLA" .x. {sabe}] |
+	[{saber} "+V" "+IPRES" "+NOS" .x. {sabemos}] |
+	[{saber} "+V" "+IPRES" "+VOS" .x. {sabéis}] |
+	[{saber} "+V" "+IPRES" "+UST" .x. {saben}]
+] ;
+
+define ExceptionSALIRforIPRES [
+	[{salir} "+V" "+IPRES" "+YO" .x. {salgo}] |
+	[{salir} "+V" "+IPRES" "+TU" .x. {sales}] |
+	[{salir} "+V" "+IPRES" "+ELLA" .x. {sale}] |
+	[{salir} "+V" "+IPRES" "+NOS" .x. {salimos}] |
+	[{salir} "+V" "+IPRES" "+VOS" .x. {salís}] |
+	[{salir} "+V" "+IPRES" "+UST" .x. {salen}]
+] ;
+
+define ExceptionSERforIPRES [
+	[{ser} "+V" "+IPRES" "+YO" .x. {soy}] |
+	[{ser} "+V" "+IPRES" "+TU" .x. {eres}] |
+	[{ser} "+V" "+IPRES" "+ELLA" .x. {es}] |
+	[{ser} "+V" "+IPRES" "+NOS" .x. {somos}] |
+	[{ser} "+V" "+IPRES" "+VOS" .x. {sois}] |
+	[{ser} "+V" "+IPRES" "+UST" .x. {son}]
+] ;
+
+
+define ExceptionTENERforIPRES [
+	[{tener} "+V" "+IPRES" "+YO" .x. {tengo}] |
+	[{tener} "+V" "+IPRES" "+TU" .x. {tienes}] |
+	[{tener} "+V" "+IPRES" "+ELLA" .x. {tiene}] |
+	[{tener} "+V" "+IPRES" "+NOS" .x. {tenemos}] |
+	[{tener} "+V" "+IPRES" "+VOS" .x. {tenéis}] |
+	[{tener} "+V" "+IPRES" "+UST" .x. {tienen}]
+] ;
+
+define ExceptionTRAERforIPRES [
+	[{traer} "+V" "+IPRES" "+YO" .x. {traigo}] |
+	[{traer} "+V" "+IPRES" "+TU" .x. {traes}] |
+	[{traer} "+V" "+IPRES" "+ELLA" .x. {trae}] |
+	[{traer} "+V" "+IPRES" "+NOS" .x. {traemos}] |
+	[{traer} "+V" "+IPRES" "+VOS" .x. {traéis}] |
+	[{traer} "+V" "+IPRES" "+UST" .x. {traen}]
+] ;
+
+define ExceptionVENIRforIPRES [
+	[{venir} "+V" "+IPRES" "+YO" .x. {vengo}] |
+	[{venir} "+V" "+IPRES" "+TU" .x. {vienes}] |
+	[{venir} "+V" "+IPRES" "+ELLA" .x. {viene}] |
+	[{venir} "+V" "+IPRES" "+NOS" .x. {venimos}] |
+	[{venir} "+V" "+IPRES" "+VOS" .x. {venís}] |
+	[{venir} "+V" "+IPRES" "+UST" .x. {vienen}]
+] ;
+
+
+define ExceptionVERforIPRES [
+	[{ver} "+V" "+IPRES" "+YO" .x. {veo}] |
+	[{ver} "+V" "+IPRES" "+TU" .x. {ves}] |
+	[{ver} "+V" "+IPRES" "+ELLA" .x. {ve}] |
+	[{ver} "+V" "+IPRES" "+NOS" .x. {vemos}] |
+	[{ver} "+V" "+IPRES" "+VOS" .x. {veís}] |
+	[{ver} "+V" "+IPRES" "+UST" .x. {ven}]
+] ;
+
+
+define ExceptionsIPRES [
+	ExceptionCAERforIPRES |
+	ExceptionDARforIPRES |
+	ExceptionTENERforIPRES |
+	ExceptionQUERERforIPRES |
+	ExceptionDECIRforIPRES |
+	ExceptionPONERforIPRES |
+	ExceptionESTARforIPRES |
+	ExceptionPODERforIPRES |
+	ExceptionHABERforIPRES |
+	ExceptionHACERforIPRES |
+	ExceptionIRforIPRES |
+	ExceptionOÍRforIPRES |
+	ExceptionSABERforIPRES |
+	ExceptionSALIRforIPRES |
+	ExceptionSERforIPRES |
+	ExceptionTRAERforIPRES |
+	ExceptionVENIRforIPRES |
+	ExceptionVERforIPRES
+] ;
+
 #---------------------WHOLE----------------------------------
 define ExceptionVerbo [
 	ExceptionsIPIMP |
+	ExceptionsIPRES |
+	ExceptionsIFUTU |
 	ExceptionsIPIND ]; 
