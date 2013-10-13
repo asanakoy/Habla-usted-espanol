@@ -3,11 +3,15 @@ source ../common.foma
 read lexc espanol_verbo.lexc
 define Lexicon;
 
+source exceptions_verbo.foma
 source rules.foma
 
-define FullVerboGrammar Lexicon
-                       .o. AllRulesTogether
-                       .o. DigitsDelete;
+defin NormalGrammar Lexicon
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+define FullVerboGrammar ExceptionVerbo
+                       .P. NormalGrammar;
 
 regex FullVerboGrammar;
 

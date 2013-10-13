@@ -14,6 +14,7 @@ sust:
 verb:
 	make -C verbo all
 	cp verbo/VerboNormal.bin .
+	cp verbo/GuesserVerbo.bin .
 
 clean:
 	find . -name \*.bin -type f -delete 
