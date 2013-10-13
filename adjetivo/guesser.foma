@@ -1,10 +1,5 @@
 source ../common.foma
 
-define C [b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z];
-define V [a | e | i | o | u | á | é | í | ó ];
-
-define Stem [C^<3 V C^<3]+;
-
 
 define GuessLexicon Stem [ 
     [i c o "+A"]:[i c o [ 0 | "*" | "^" s | "*" "^" s ] ]    |

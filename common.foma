@@ -11,3 +11,11 @@ define PercentDelete "%" -> 0;
 define BangDelete "!" -> 0;
 
 define WhenInsertE [ q | w | r | t | p | s | d | f | g | h | j | k | l | z | x | c | v | b | n | m | y | i | á | é | í | ó ];
+
+define C [b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z];
+
+define V [a | e | i | o | u | á | é | í | ó ];
+
+define Stem [C^<3 V^{1,3} C^<3]+;
+
+

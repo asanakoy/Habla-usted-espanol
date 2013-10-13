@@ -20,5 +20,6 @@ define Grammar [ Normal .p. Guesser];
 
 regex Grammar;
 
-save stack Espanol.bin;
+save stack Espanol.bin
+
 quit;
