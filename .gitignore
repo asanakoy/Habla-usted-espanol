@@ -12,5 +12,9 @@
 *.la
 *.a
 
-# Foma Binary Files
+# Foma Binary files
 *.bin
+
+# Train, test, processing files
+*.log
+*.utf-8
