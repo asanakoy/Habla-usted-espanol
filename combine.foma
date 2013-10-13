@@ -1,0 +1,24 @@
+load stack GuesserSustantivo.bin
+define GuesserSustantivo
+load stack SustantivoNormal.bin
+define SustantivoNormal
+
+load stack GuesserAdjetivo.bin
+define GuesserAdjetivo
+load stack AdjetivoNormal.bin
+define AdjetivoNormal
+
+load stack GuesserVerbo.bin
+define GuesserVerbo
+load stack VerboNormal.bin
+define VerboNormal 
+
+define Guesser [GuesserSustantivo | GuesserAdjetivo | GuesserVerbo];
+define Normal [SustantivoNormal | AdjetivoNormal | VerboNormal];
+
+define Grammar [ Normal .p. Guesser];
+
+regex Grammar;
+
+save stack Espanol.bin;
+quit;

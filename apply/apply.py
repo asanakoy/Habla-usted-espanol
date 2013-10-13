@@ -10,7 +10,7 @@ answer = open("answer.txt", "w")
 for line in test:
     splitted = line.split()
     wordform = splitted[0]
-    execute("echo " + wordform + "| flookup result.bin > temp.log") 
+    execute("echo " + wordform + "| flookup ../Espanol.bin > temp.log") 
     temp = open("temp.log", "r")
     nouns, verbs, adjectives = set(), set(), set()
     for row in temp:
