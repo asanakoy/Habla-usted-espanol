@@ -1,0 +1,51 @@
+source rules.foma
+source ../common.foma
+
+read lexc VInf.lexc
+define VInf;
+
+read lexc irregulares/irregulares_1.lexc
+define IRR1;
+read lexc irregulares/irregulares_2.lexc
+define IRR2;
+read lexc irregulares/irregulares_3.lexc
+define IRR3;
+read lexc irregulares/irregulares_4.lexc
+define IRR4;
+read lexc irregulares/irregulares_5.lexc
+define IRR5;
+read lexc irregulares/irregulares_6.lexc
+define IRR6;
+read lexc irregulares/irregulares_7.lexc
+define IRR7;
+read lexc irregulares/irregulares_8.lexc
+define IRR8;
+read lexc irregulares/irregulares_9.lexc
+define IRR9;
+
+define IRR1 [IRR1 VInf];
+define IRR2 [IRR2 VInf];
+define IRR3 [IRR3 VInf];
+define IRR4 [IRR4 VInf];
+define IRR5 [IRR5 VInf];
+define IRR6 [IRR6 VInf];
+define IRR7 [IRR7 VInf];
+define IRR8 [IRR8 VInf];
+define IRR9 [IRR9 VInf];
+
+define RuleOtoUE o (->) ue;
+define RuleEtoI e (->) i;
+
+
+define Irr2Grammar IRR2
+                    .o. RuleOtoUE
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+define IrrGrammar Irr2Grammar;
+
+regex IrrGrammar;
+
+save stack VerboIrregulare.bin
+
+quit;

@@ -15,11 +15,12 @@ define NormalGrammar Lexicon
                     .o. AllRulesTogether
                     .o. DigitsDelete;
 
-define FullVerboGrammar ExceptionVerbo
-                       .P. NormalGrammar;
+load stack VerboIrregulare.bin
+define IrregularGrammar;
 
+define FullVerboGrammar [IrregularGrammar | [ExceptionVerbo .P. NormalGrammar]];
+                        
 regex FullVerboGrammar;
-
 save stack VerboNormal.bin
 
 quit;
