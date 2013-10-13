@@ -1,0 +1,26 @@
+source rules.foma
+
+define GuessLexicon Stem [
+	["+V"]:[ ["^" Ditits] | 
+		 ["*" Digits] | 
+		 ["$" Digits] |
+		 [")" Digits] |
+		 ["&" Digins] |
+		 ["(" Digits] |
+		 ["(" "(" Digits] |
+		 ["$" "$" Digits] |
+		 ["&" "$"] |
+		 ["^" "^" Digits] |
+		 ["*" "*" Digits] |
+		 [")" ")"]
+		]
+];
+
+define GuessGrammar GuessLexicon
+	.o. AllRulesTogether;
+
+regex GuessGrammar;
+
+save stack GuesserVerbo.bin
+
+quit;
