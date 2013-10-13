@@ -16,6 +16,10 @@ source espanol_verbo_potencial_imp.foma
 
 source espanol_verbo_participio_passado.foma
 
+source espanol_verbo_imperativo_afirmativa.foma
+
+source espanol_verbo_imperativo_negativa.foma
+
 define AllRulesTogether  PresInd
                         .o. PretImpInd
                         .o. PretIndefInd
@@ -24,5 +28,7 @@ define AllRulesTogether  PresInd
                         .o. SubjPretImp
                         .o. SubjFutSimple
                         .o. PotencImp
-                        .o. PartPas;
+                        .o. PartPas
+                        .o. ImperAfir
+                        .o. ImperNeg;
 

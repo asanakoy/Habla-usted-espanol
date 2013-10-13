@@ -1,0 +1,24 @@
+define ImperNegTu1 [a r "*""*"] -> es || _ 2;
+define ImperNegElla1 [a r "*""*"] -> e || _ 3;
+define ImperNegNos1 [a r "*""*"] -> emos || _ 4;
+define ImperNegVos1 [a r "*""*"] -> éis || _ 5;
+define ImperNegUst1 [a r "*""*"] -> en || _ 6;
+
+define ImperNegTu2 [e r "*""*"] -> as || _ 2;
+define ImperNegElla2 [e r "*""*"] -> a || _ 3;
+define ImperNegNos2 [e r "*""*"] -> amos || _ 4;
+define ImperNegVos2 [e r "*""*"] -> áis || _ 5;
+define ImperNegUst2 [e r "*""*"] -> an || _ 6;
+
+define ImperNegTu3 [i r "*""*"] -> as || _ 2;
+define ImperNegElla3 [i r "*""*"] -> a || _ 3;
+define ImperNegNos3 [i r "*""*"] -> amos || _ 4;
+define ImperNegVos3 [i r "*""*"] -> áis || _ 5;
+define ImperNegUst3 [i r "*""*"] -> an || _ 6;
+
+define ImperNeg1 ImperNegTu1 .o. ImperNegElla1 .o. ImperNegNos1 .o. ImperNegVos1 .o. ImperNegUst1;
+define ImperNeg2 ImperNegTu2 .o. ImperNegElla2 .o. ImperNegNos2 .o. ImperNegVos2 .o. ImperNegUst2;
+define ImperNeg3 ImperNegTu3 .o. ImperNegElla3 .o. ImperNegNos3 .o. ImperNegVos3 .o. ImperNegUst3;
+
+define ImperNeg ImperNeg1 .o. ImperNeg2 .o. ImperNeg3;
+

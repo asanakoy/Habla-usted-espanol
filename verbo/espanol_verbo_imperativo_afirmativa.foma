@@ -1,0 +1,24 @@
+define ImperAfirTu1 [a r "^""^"] -> a || _ 2;
+define ImperAfirElla1 [a r "^""^"] -> e || _ 3;
+define ImperAfirNos1 [a r "^""^"] -> emos || _ 4;
+define ImperAfirVos1 [a r "^""^"] -> ad || _ 5;
+define ImperAfirUst1 [a r "^""^"] -> en || _ 6;
+
+define ImperAfirTu2 [e r "^""^"] -> e || _ 2;
+define ImperAfirElla2 [e r "^""^"] -> a || _ 3;
+define ImperAfirNos2 [e r "^""^"] -> amos || _ 4;
+define ImperAfirVos2 [e r "^""^"] -> ed || _ 5;
+define ImperAfirUst2 [e r "^""^"] -> an || _ 6;
+
+define ImperAfirTu3 [i r "^""^"] -> e || _ 2;
+define ImperAfirElla3 [i r "^""^"] -> a || _ 3;
+define ImperAfirNos3 [i r "^""^"] -> amos || _ 4;
+define ImperAfirVos3 [i r "^""^"] -> id || _ 5;
+define ImperAfirUst3 [i r "^""^"] -> an || _ 6;
+
+define ImperAfir1 ImperAfirTu1 .o. ImperAfirElla1 .o. ImperAfirNos1 .o. ImperAfirVos1 .o. ImperAfirUst1;
+define ImperAfir2 ImperAfirTu2 .o. ImperAfirElla2 .o. ImperAfirNos2 .o. ImperAfirVos2 .o. ImperAfirUst2;
+define ImperAfir3 ImperAfirTu3 .o. ImperAfirElla3 .o. ImperAfirNos3 .o. ImperAfirVos3 .o. ImperAfirUst3;
+
+define ImperAfir ImperAfir1 .o. ImperAfir2 .o. ImperAfir3;
+
