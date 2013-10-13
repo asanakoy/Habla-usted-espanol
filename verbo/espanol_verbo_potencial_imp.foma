@@ -1,23 +1,23 @@
-define PotencImpYo1 [a r "$" "$"] -> aría || _ 1;
-define PotencImpTu1 [a r "$" "$"] -> arías|| _ 2;
-define PotencImpElla1 [a r "$" "$"] -> aría || _ 3;
-define PotencImpNos1 [a r "$" "$"] -> aríamos || _ 4;
-define PotencImpVos1 [a r "$" "$"] -> aríais || _ 5;
-define PotencImpUst1 [a r "$" "$"] -> arían || _ 6;
+define PotencImpYo1 [a r "$" "$"] -> {aría} || _ 1;
+define PotencImpTu1 [a r "$" "$"] -> {arías} || _ 2;
+define PotencImpElla1 [a r "$" "$"] -> {aría} || _ 3;
+define PotencImpNos1 [a r "$" "$"] -> {aríamos} || _ 4;
+define PotencImpVos1 [a r "$" "$"] -> {aríais} || _ 5;
+define PotencImpUst1 [a r "$" "$"] -> {arían} || _ 6;
 
-define PotencImpYo2 [e r "$" "$"] -> ería || _ 1;
-define PotencImpTu2 [e r "$" "$"] -> erías || _ 2;
-define PotencImpElla2 [e r "$" "$"] -> ería || _ 3;
-define PotencImpNos2 [e r "$" "$"] -> íamos || _ 4;
-define PotencImpVos2 [e r "$" "$"] -> íais || _ 5;
-define PotencImpUst2 [e r "$" "$"] -> ían || _ 6;
+define PotencImpYo2 [e r "$" "$"] -> {ería} || _ 1;
+define PotencImpTu2 [e r "$" "$"] -> {erías} || _ 2;
+define PotencImpElla2 [e r "$" "$"] -> {ería} || _ 3;
+define PotencImpNos2 [e r "$" "$"] -> {íamos} || _ 4;
+define PotencImpVos2 [e r "$" "$"] -> {íais} || _ 5;
+define PotencImpUst2 [e r "$" "$"] -> {ían} || _ 6;
 
-define PotencImpYo3 [i r "$" "$"] -> iría || _ 1;
-define PotencImpTu3 [i r "$" "$"] -> irías || _ 2;
-define PotencImpElla3 [i r "$" "$"] -> iría || _ 3;
-define PotencImpNos3 [i r "$" "$"] -> iríamos|| _ 4;
-define PotencImpVos3 [i r "$" "$"] -> iríais|| _ 5;
-define PotencImpUst3 [i r "$" "$"] -> irían || _ 6;
+define PotencImpYo3 [i r "$" "$"] -> {iría} || _ 1;
+define PotencImpTu3 [i r "$" "$"] -> {irías} || _ 2;
+define PotencImpElla3 [i r "$" "$"] -> {iría} || _ 3;
+define PotencImpNos3 [i r "$" "$"] -> {iríamos} || _ 4;
+define PotencImpVos3 [i r "$" "$"] -> {iríais} || _ 5;
+define PotencImpUst3 [i r "$" "$"] -> {irían} || _ 6;
 
 define PotencImp1 PotencImpYo1 .o. PotencImpTu1 .o. PotencImpElla1 .o. PotencImpNos1 .o. PotencImpVos1 .o. PotencImpUst1;
 define PotencImp2 PotencImpYo2 .o. PotencImpTu2 .o. PotencImpElla2 .o. PotencImpNos2 .o. PotencImpVos2 .o. PotencImpUst2;

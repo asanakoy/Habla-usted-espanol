@@ -1,7 +1,7 @@
-define Gerundio1 [a r ")"")"] -> ando;
+define Gerundio1 [a r ")"")"] -> {ando};
 
-define Gerundio2 [e r ")" ")"] -> iendo;
+define Gerundio2 [e r ")" ")"] -> {iendo};
 
-define Gerundio3 [i r ")" ")"] -> iendo;
+define Gerundio3 [i r ")" ")"] -> {iendo};
 
 define Gerundio Gerundio1 .o. Gerundio2 .o. Gerundio3;
