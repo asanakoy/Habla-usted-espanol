@@ -5,8 +5,8 @@ define SustantivoNormal
 
 load stack GuesserAdjetivo.bin
 define GuesserAdjetivo
-load stack AdjetivoNormal.bin
-define AdjetivoNormal
+load stack NormalAdjetivo.bin
+define NormalAdjetivo
 
 load stack GuesserVerbo.bin
 define GuesserVerbo
