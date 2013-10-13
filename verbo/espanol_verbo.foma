@@ -1,38 +1,13 @@
 source ../common.foma
 
 read lexc espanol_verbo.lexc
-
 define Lexicon;
 
-source espanol_verbo_pres_ind.foma
-
-source espanol_verbo_pret_imp.foma
-
-source espanol_verbo_pret_indef.foma
-
-source espanol_verbo_fut_simple.foma
-
-source espanol_verbo_pres_subj.foma
-
-source espanol_verbo_subj_pret_imp.foma
-
-source espanol_verbo_subj_fut_simple.foma
-
-source espanol_verbo_potencial_imp.foma
-
-source espanol_verbo_participio_passado.foma
+source rules.foma
 
 define FullVerboGrammar Lexicon
-                        .o. PresInd
-                        .o. PretImpInd
-                        .o. PretIndefInd
-                        .o. FutSimpleInd
-                        .o. PresSubj
-                        .o. SubjPretImp
-                        .o. SubjFutSimple
-                        .o. PotencImp
-                        .o. PartPas
-                        .o. DigitsDelete;
+                       .o. AllRulesTogether
+                       .o. DigitsDelete;
 
 regex FullVerboGrammar;
 
