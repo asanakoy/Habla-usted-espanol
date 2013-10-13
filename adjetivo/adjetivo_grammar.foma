@@ -1,0 +1,12 @@
+load stack GuesserAdjetivo.bin
+define Guesser;
+
+load stack NormalAdjetivo.bin
+define Normal;
+
+define Grammar [Normal .p. Guesser];
+regex Grammar;
+
+save stack AdjetivoGrammar.bin
+
+quit;

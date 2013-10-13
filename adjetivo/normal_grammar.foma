@@ -1,0 +1,18 @@
+source rules.foma
+
+read lexc normal_grammar.lexc
+
+define Lexicon;
+
+define Grammar Lexicon .o.
+                MascToFemLastToA .o.
+                StarDelete .o.
+                ZReplacement .o.
+                PluralEInsertion .o.
+                HatDelete;
+
+regex Grammar;
+
+save stack NormalAdjetivo.bin
+
+quit;
