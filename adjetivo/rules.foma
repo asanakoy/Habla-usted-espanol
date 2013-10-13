@@ -1,0 +1,8 @@
+source ../common.foma
+
+define MascToFemLastToA	 o -> a || _ "*" ;
+
+define ZReplacement z -> c || _ "^";
+
+define PluralEInsertion [..] -> e || WhenInsertE "^" _ s; 
+
