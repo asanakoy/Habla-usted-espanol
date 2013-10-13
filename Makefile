@@ -9,7 +9,7 @@ sust:
 	make -C sustantivo all
 	cp sustantivo/SustantivoNormal.bin .
 	cp sustantivo/GuesserSustantivo.bin .
-	
+
 verb:
 	make -C verbo all
 	cp verbo/VerboNormal.bin .
