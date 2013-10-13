@@ -1,23 +1,12 @@
 source rules.foma
+source ../common.foma
 
-define GuessLexicon Stem [
-	["+V"]:[ ["^" Ditits] | 
-		 ["*" Digits] | 
-		 ["$" Digits] |
-		 [")" Digits] |
-		 ["&" Digins] |
-		 ["(" Digits] |
-		 ["(" "(" Digits] |
-		 ["$" "$" Digits] |
-		 ["&" "$"] |
-		 ["^" "^" Digits] |
-		 ["*" "*" Digits] |
-		 [")" ")"]
-		]
+define GuessLexicon Stem  [
+	["+V"]: [["^" | "*" | "$" | ")" | "&" | "(" | "(" "(" | "$" "$" | "&" "$" | "^" "^" | "*" "*" | ")" ")"] Digits] 
 ];
 
-define GuessGrammar GuessLexicon
-	.o. AllRulesTogether;
+define GuessGrammar [GuessLexicon
+	.o. AllRulesTogether .o. DigitsDelete];
 
 regex GuessGrammar;
 

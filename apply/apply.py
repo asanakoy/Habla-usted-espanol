@@ -1,3 +1,4 @@
+import re
 import subprocess as sp
 import math
 
@@ -17,7 +18,8 @@ for line in test:
     temp = open("temp.log", "r")
     nouns, verbs, adjectives = set(), set(), set()
     for row in temp:
-        parts = row.split("+")
+        expr = re.compile(r'\+|\t|\n')
+        parts = re.split(expr, row)
         print parts
         if len(parts) <= 1:
             continue

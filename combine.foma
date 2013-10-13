@@ -10,9 +10,9 @@ load stack GuesserAdjetivo.bin
 
 define GuesserAdjetivo2;
 
-load stack NormalAdjetivo.bin
+load stack AdjetivoNormal.bin
 
-define NormalAdjetivo2;
+define AdjetivoNormal2;
 
 load stack GuesserVerbo.bin
 
@@ -25,7 +25,7 @@ define VerboNormal2;
 define Guesser [GuesserSustantivo2 | GuesserAdjetivo2 | GuesserVerbo2];
 define Normal2 [SustantivoNormal2 | AdjetivoNormal2 | VerboNormal2];
 
-regex Normal2 .P. Guesser;
+regex Normal2 .p. Guesser;
 
 save stack Espanol.bin
 

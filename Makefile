@@ -1,5 +1,6 @@
 all: sust verb adj
 	foma -l combine.foma
+	make -C apply all
 
 adj:
 	make -C adjetivo all
