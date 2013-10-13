@@ -1,5 +1,20 @@
-
+source ../espanol_verbo.lexc
 
 LEXICON Irregulares_2
-
-;
+    
+volver  VInf;
+soñar Vinf;
+torcer Vinf;
+encontrar Vinf;
+moverse Vinf;
+acostarse Vinf;
+almorzar Vinf;
+aprobar Vinf;
+costar Vinf;
+sonar Vinf;
+recordar Vinf;
+rodar Vinf;
+soler Vinf;
+cocer Vinf;
+probar Vinf;
+demostrar Vinf;
