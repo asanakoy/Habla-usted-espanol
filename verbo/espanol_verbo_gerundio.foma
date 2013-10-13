@@ -1,4 +1,4 @@
-define Gerundio1 [a r ")"")"] -> {ando};
+define Gerundio1 [a r ")" ")"] -> {ando};
 
 define Gerundio2 [e r ")" ")"] -> {iendo};
 
