@@ -23,7 +23,6 @@ wordform =  ""
 for line in inp:
         expr = re.compile(r'\+|\t|\n')
         parts = re.split(expr, line) 
-#        print parts
         if len(parts) <= 2:
             if fcnt > 0:
                 if len(nouns) > 0:
