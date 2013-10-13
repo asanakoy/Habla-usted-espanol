@@ -1,5 +1,5 @@
 
-all: sust verbo adjetivo
+all: sust verb adj
 	foma -l combine.foma
 
 sust:
