@@ -1,5 +1,26 @@
+!!! Irregular verbs. 
+!!! Conjugación de los verbos irregulares.
+!!! group: o - ue
 
+LEXICON Root
+
+Irregulares_2;
 
 LEXICON Irregulares_2
-
-;
+    
+volver #;
+soñar #;
+torcer #;
+encontrar #;
+moverse #;
+acostarse #;
+almorzar #;
+aprobar #;
+costar #;
+sonar #;
+recordar #;
+rodar #;
+soler #;
+cocer #;
+probar #;
+demostrar #;
