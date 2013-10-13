@@ -1,5 +1,6 @@
 
 all: sust verbo adjetivo
+	foma -l combine.foma
 
 sust:
 	make -C sustantivo all
