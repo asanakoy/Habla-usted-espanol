@@ -1,4 +1,4 @@
-verbo:
+all:
 	foma -l espanol_verbo.foma
 
 clean:
