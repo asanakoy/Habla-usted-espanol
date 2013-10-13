@@ -20,6 +20,8 @@ source espanol_verbo_imperativo_afirmativa.foma
 
 source espanol_verbo_imperativo_negativa.foma
 
+source espanol_verbo_gerundio.foma
+
 define AllRulesTogether  PresInd
                         .o. PretImpInd
                         .o. PretIndefInd
@@ -30,5 +32,6 @@ define AllRulesTogether  PresInd
                         .o. PotencImp
                         .o. PartPas
                         .o. ImperAfir
-                        .o. ImperNeg;
+                        .o. ImperNeg
+                        .o. Gerundio;
 

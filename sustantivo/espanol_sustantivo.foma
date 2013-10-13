@@ -50,6 +50,6 @@ define FullGrammar Exceptions .P. Grammar;
 
 regex FullGrammar;
 
-save stack NormalSustantivo.bin
+save stack SustantivoNormal.bin
 
 quit;

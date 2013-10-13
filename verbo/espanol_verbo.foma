@@ -11,6 +11,6 @@ define FullVerboGrammar Lexicon
 
 regex FullVerboGrammar;
 
-save stack NormalVerbo.bin
+save stack VerboNormal.bin
 
 quit;
