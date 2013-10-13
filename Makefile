@@ -1,3 +1,5 @@
+all: sust verbo adjetivo
+
 sust:
 	make -C sustantivo all
 	cp sustantivo/SustantivoGrammar.bin .
@@ -5,5 +7,9 @@ sust:
 verbo:
 	foma -l espanol_verbo.foma
 
+adjetivo:
+	make -C adjetivo all
+# 	cp adjetivo/NormalAdjetivo.bin .
+	
 clean:
-	rm -r *.bin
+	find . -name \*.bin -type f -delete 
