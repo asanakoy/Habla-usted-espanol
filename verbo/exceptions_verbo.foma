@@ -33,7 +33,7 @@ define ExceptionsIPIMP [
 	ExceptionSERforIPIMP 	| 
 	ExceptionVERforIPIMP 	] ;
 
-#----------------------IPIND-----------------------------
+#----------------------IPIND-Pretérito indefinido de indicativo-----------------
 
 define ExceptionANDARforIPIND [
 	[{andar} "+V" "+IPIND" "+YO" .x. {anduve}] |
@@ -202,7 +202,7 @@ define ExceptionVERforIPIND [
 	[{ver} "+V" "+IPIND" "+UST" .x. {vieron}]
 ] ;
 
-define ExcepitionsIPIND [
+define ExceptionsIPIND [
 	ExceptionANDARforIPIND	|
 	ExceptionCAERforIPIND 	|
 	ExceptionDARforIPIND 	|
@@ -318,7 +318,7 @@ define ExceptionVENIRforIFUTU [
 	[{venir} "+V" "+IFUTU" "+UST" .x. {vendrán}]
 ] ;
 
-define ExcepitonsIFUTU [
+define ExceptionsIFUTU [
 	ExceptionDECIRforIFUTU  |
 	ExceptionHABERforIFUTU  |
 	ExceptionHACERforIFUTU  |
@@ -331,7 +331,7 @@ define ExcepitonsIFUTU [
 	ExceptionVENIRforIFUTU 
 ] ;
 
-#---------------------IPRES----------------------------------
+#---------------------IPRES-Presente de indicativo------------------------------
 
 define ExceptionCAERforIPRES [
 	[{caer} "+V" "+IPRES" "+YO" .x. {caigo}] |
@@ -715,7 +715,8 @@ define ExceptionsSPIMA [
 	ExceptionANDARforSPIMA 
 ];
 
-#---------------------SPRES----------------------------------
+#---------------------SPRES-Presente de Subjuntivo------------------------------
+
 define ExceptionCAERforSPRES [
 	[{caer} "+V" "+SPRES" "+YO" .x. {caiga}] |
 	[{caer} "+V" "+SPRES" "+TU" .x. {caigas}] |
@@ -907,6 +908,340 @@ define ExceptionsSPRES 		[
 	ExceptionCAERforSPRES 
 ] ;
 
+#---------------------IMPNE-Imperativo negativa---------------------------------
+
+define ExceptionCAERforIMPNE [
+    [{caer} "+V" "+IMPNE" "+TU" .x. {caigas}] |
+    [{caer} "+V" "+IMPNE" "+ELLA" .x. {caiga}] |
+    [{caer} "+V" "+IMPNE" "+NOS" .x. {caigamos}] |
+    [{caer} "+V" "+IMPNE" "+VOS" .x. {caigáis}] |
+    [{caer} "+V" "+IMPNE" "+UST" .x. {caigan}]
+  ] ;
+
+define ExceptionDARforIMPNE [
+    [{dar} "+V" "+IMPNE" "+TU" .x. {des}] |
+    [{dar} "+V" "+IMPNE" "+ELLA" .x. {dé}] |
+    [{dar} "+V" "+IMPNE" "+NOS" .x. {demos}] |
+    [{dar} "+V" "+IMPNE" "+VOS" .x. {deis}] |
+    [{dar} "+V" "+IMPNE" "+UST" .x. {den}]
+  ] ;
+
+define ExceptionDECIRforIMPNE [
+    [{decir} "+V" "+IMPNE" "+TU" .x. {digas}] |
+    [{decir} "+V" "+IMPNE" "+ELLA" .x. {diga}] |
+    [{decir} "+V" "+IMPNE" "+NOS" .x. {digamos}] |
+    [{decir} "+V" "+IMPNE" "+VOS" .x. {digáis}] |
+    [{decir} "+V" "+IMPNE" "+UST" .x. {digan}]
+  ] ;
+
+define ExceptionESTARforIMPNE [
+    [{estar} "+V" "+IMPNE" "+TU" .x. {estés}] |
+    [{estar} "+V" "+IMPNE" "+ELLA" .x. {esté}] |
+    [{estar} "+V" "+IMPNE" "+NOS" .x. {estemos}] |
+    [{estar} "+V" "+IMPNE" "+VOS" .x. {estéis}] |
+    [{estar} "+V" "+IMPNE" "+UST" .x. {estén}]
+  ] ;
+
+
+define ExceptionHACERforIMPNE [
+    [{hacer} "+V" "+IMPNE" "+TU" .x. {hagas}] |
+    [{hacer} "+V" "+IMPNE" "+ELLA" .x. {haga}] |
+    [{hacer} "+V" "+IMPNE" "+NOS" .x. {hagamos}] |
+    [{hacer} "+V" "+IMPNE" "+VOS" .x. {hagáis}] |
+    [{hacer} "+V" "+IMPNE" "+UST" .x. {hagan}]
+  ] ;
+
+define ExceptionIRforIMPNE [
+    [{ir} "+V" "+IMPNE" "+TU" .x. {vayas}] |
+    [{ir} "+V" "+IMPNE" "+ELLA" .x. {vaya}] |
+    [{ir} "+V" "+IMPNE" "+NOS" .x. {vayamos}] |
+    [{ir} "+V" "+IMPNE" "+VOS" .x. {vayáis}] |
+    [{ir} "+V" "+IMPNE" "+UST" .x. {vayan}]
+  ] ;
+
+define ExceptionOÍRforIMPNE [
+    [{oír} "+V" "+IMPNE" "+TU" .x. {oigas}] |
+    [{oír} "+V" "+IMPNE" "+ELLA" .x. {oiga}] |
+    [{oír} "+V" "+IMPNE" "+NOS" .x. {oigamos}] |
+    [{oír} "+V" "+IMPNE" "+VOS" .x. {oigáis}] |
+    [{oír} "+V" "+IMPNE" "+UST" .x. {oigan}]
+  ] ;
+
+define ExceptionPODERforIMPNE [
+    [{poder} "+V" "+IMPNE" "+TU" .x. {puedas}] |
+    [{poder} "+V" "+IMPNE" "+ELLA" .x. {pueda}] |
+    [{poder} "+V" "+IMPNE" "+NOS" .x. {podamos}] |
+    [{poder} "+V" "+IMPNE" "+VOS" .x. {podáis}] |
+    [{poder} "+V" "+IMPNE" "+UST" .x. {puedan}]
+  ] ;
+
+define ExceptionPONERforIMPNE [
+    [{poner} "+V" "+IMPNE" "+TU" .x. {pongas}] |
+    [{poner} "+V" "+IMPNE" "+ELLA" .x. {ponga}] |
+    [{poner} "+V" "+IMPNE" "+NOS" .x. {pongamos}] |
+    [{poner} "+V" "+IMPNE" "+VOS" .x. {pongáis}] |
+    [{poner} "+V" "+IMPNE" "+UST" .x. {pongan}]
+  ] ;
+
+define ExceptionQUERERforIMPNE [
+    [{querer} "+V" "+IMPNE" "+TU" .x. {quieras}] |
+    [{querer} "+V" "+IMPNE" "+ELLA" .x. {quiera}] |
+    [{querer} "+V" "+IMPNE" "+NOS" .x. {queramos}] |
+    [{querer} "+V" "+IMPNE" "+VOS" .x. {queráis}] |
+    [{querer} "+V" "+IMPNE" "+UST" .x. {quieran}]
+  ] ;
+
+define ExceptionSABERforIMPNE [
+    [{saber} "+V" "+IMPNE" "+TU" .x. {sepas}] |
+    [{saber} "+V" "+IMPNE" "+ELLA" .x. {sepa}] |
+    [{saber} "+V" "+IMPNE" "+NOS" .x. {sepamos}] |
+    [{saber} "+V" "+IMPNE" "+VOS" .x. {sepáis}] |
+    [{saber} "+V" "+IMPNE" "+UST" .x. {sepan}]
+  ] ;
+
+define ExceptionSALIRforIMPNE [
+    [{salir} "+V" "+IMPNE" "+TU" .x. {salgas}] |
+    [{salir} "+V" "+IMPNE" "+ELLA" .x. {salga}] |
+    [{salir} "+V" "+IMPNE" "+NOS" .x. {salgamos}] |
+    [{salir} "+V" "+IMPNE" "+VOS" .x. {salgáis}] |
+    [{salir} "+V" "+IMPNE" "+UST" .x. {salgan}]
+  ] ;
+
+define ExceptionSERforIMPNE [
+    [{ser} "+V" "+IMPNE" "+TU" .x. {seas}] |
+    [{ser} "+V" "+IMPNE" "+ELLA" .x. {sea}] |
+    [{ser} "+V" "+IMPNE" "+NOS" .x. {seamos}] |
+    [{ser} "+V" "+IMPNE" "+VOS" .x. {seáis}] |
+    [{ser} "+V" "+IMPNE" "+UST" .x. {sean}]
+  ] ;
+
+define ExceptionTENERforIMPNE [
+    [{tener} "+V" "+IMPNE" "+TU" .x. {tengas}] |
+    [{tener} "+V" "+IMPNE" "+ELLA" .x. {tenga}] |
+    [{tener} "+V" "+IMPNE" "+NOS" .x. {tengamos}] |
+    [{tener} "+V" "+IMPNE" "+VOS" .x. {tengáis}] |
+    [{tener} "+V" "+IMPNE" "+UST" .x. {tengan}]
+  ] ;
+
+define ExceptionTRAERforIMPNE [
+    [{traer} "+V" "+IMPNE" "+TU" .x. {traigas}] |
+    [{traer} "+V" "+IMPNE" "+ELLA" .x. {traiga}] |
+    [{traer} "+V" "+IMPNE" "+NOS" .x. {traigamos}] |
+    [{traer} "+V" "+IMPNE" "+VOS" .x. {traigáis}] |
+    [{traer} "+V" "+IMPNE" "+UST" .x. {traigan}]
+  ] ;
+
+define ExceptionVENIRforIMPNE [
+    [{venir} "+V" "+IMPNE" "+TU" .x. {vengas}] |
+    [{venir} "+V" "+IMPNE" "+ELLA" .x. {venga}] |
+    [{venir} "+V" "+IMPNE" "+NOS" .x. {vengamos}] |
+    [{venir} "+V" "+IMPNE" "+VOS" .x. {vengáis}] |
+    [{venir} "+V" "+IMPNE" "+UST" .x. {vengan}]
+  ] ;
+  
+define ExceptionVERforIMPNE [
+    [{ver} "+V" "+IMPNE" "+TU" .x. {veas}] |
+    [{ver} "+V" "+IMPNE" "+ELLA" .x. {vea}] |
+    [{ver} "+V" "+IMPNE" "+NOS" .x. {veamos}] |
+    [{ver} "+V" "+IMPNE" "+VOS" .x. {veáis}] |
+    [{ver} "+V" "+IMPNE" "+UST" .x. {vean}]
+  ] ;
+
+define ExceptionsIMPNE       [
+    ExceptionCAERforIMPNE  | 
+    ExceptionDARforIMPNE    |
+    ExceptionDECIRforIMPNE |
+    ExceptionESTARforIMPNE  |
+    ExceptionHACERforIMPNE  |
+    ExceptionIRforIMPNE    |
+    ExceptionOÍRforIMPNE  |
+    ExceptionPODERforIMPNE |
+    ExceptionPONERforIMPNE  |
+    ExceptionQUERERforIMPNE  |
+    ExceptionSABERforIMPNE    |
+    ExceptionSALIRforIMPNE     |
+    ExceptionSERforIMPNE  |
+    ExceptionTENERforIMPNE  |
+    ExceptionTRAERforIMPNE  |
+    ExceptionVENIRforIMPNE  |
+    ExceptionVERforIMPNE    |
+  ];
+#---------------------IMPAF-Imperativo afirmativo-------------------------------
+
+define ExceptionCAERforIMPAF [
+    [{caer} "+V" "+IMPAF" "+TU" .x. {cae}] |
+    [{caer} "+V" "+IMPAF" "+ELLA" .x. {caiga}] |
+    [{caer} "+V" "+IMPAF" "+NOS" .x. {caigamos}] |
+    [{caer} "+V" "+IMPAF" "+VOS" .x. {caed}] |
+    [{caer} "+V" "+IMPAF" "+UST" .x. {caigan}]
+  ] ;
+
+define ExceptionDARforIMPAF [
+    [{dar} "+V" "+IMPAF" "+TU" .x. {da}] |
+    [{dar} "+V" "+IMPAF" "+ELLA" .x. {dé}] |
+    [{dar} "+V" "+IMPAF" "+NOS" .x. {demos}] |
+    [{dar} "+V" "+IMPAF" "+VOS" .x. {dad}] |
+    [{dar} "+V" "+IMPAF" "+UST" .x. {den}]
+  ] ;
+
+define ExceptionDECIRforIMPAF [
+    [{decir} "+V" "+IMPAF" "+TU" .x. {di}] |
+    [{decir} "+V" "+IMPAF" "+ELLA" .x. {diga}] |
+    [{decir} "+V" "+IMPAF" "+NOS" .x. {digamos}] |
+    [{decir} "+V" "+IMPAF" "+VOS" .x. {decid}] |
+    [{decir} "+V" "+IMPAF" "+UST" .x. {digan}]
+  ] ;
+
+define ExceptionESTARforIMPAF [
+    [{estar} "+V" "+IMPAF" "+TU" .x. {está}] |
+    [{estar} "+V" "+IMPAF" "+ELLA" .x. {esté}] |
+    [{estar} "+V" "+IMPAF" "+NOS" .x. {estemos}] |
+    [{estar} "+V" "+IMPAF" "+VOS" .x. {estad}] |
+    [{estar} "+V" "+IMPAF" "+UST" .x. {estén}]
+  ] ;
+
+define ExceptionHACERforIMPAF [
+    [{hacer} "+V" "+IMPAF" "+TU" .x. {haz}] |
+    [{hacer} "+V" "+IMPAF" "+ELLA" .x. {haga}] |
+    [{hacer} "+V" "+IMPAF" "+NOS" .x. {hagamos}] |
+    [{hacer} "+V" "+IMPAF" "+VOS" .x. {haced}] |
+    [{hacer} "+V" "+IMPAF" "+UST" .x. {hagan}]
+  ] ;
+
+define ExceptionIRforIMPAF [
+    [{ir} "+V" "+IMPAF" "+TU" .x. {ve}] |
+    [{ir} "+V" "+IMPAF" "+ELLA" .x. {vaya}] |
+    [{ir} "+V" "+IMPAF" "+NOS" .x. {vayamos}] |
+    [{ir} "+V" "+IMPAF" "+VOS" .x. {id}] |
+    [{ir} "+V" "+IMPAF" "+UST" .x. {vayan}]
+  ] ;
+
+define ExceptionOÍRforIMPAF [
+    [{oír} "+V" "+IMPAF" "+TU" .x. {oye}] |
+    [{oír} "+V" "+IMPAF" "+ELLA" .x. {oiga}] |
+    [{oír} "+V" "+IMPAF" "+NOS" .x. {oigamos}] |
+    [{oír} "+V" "+IMPAF" "+VOS" .x. {oíd}] |
+    [{oír} "+V" "+IMPAF" "+UST" .x. {oigan}]
+  ] ;
+
+define ExceptionPODERforIMPAF [
+    [{poder} "+V" "+IMPAF" "+TU" .x. {puede}] |
+    [{poder} "+V" "+IMPAF" "+ELLA" .x. {pueda}] |
+    [{poder} "+V" "+IMPAF" "+NOS" .x. {podamos}] |
+    [{poder} "+V" "+IMPAF" "+VOS" .x. {poded}] |
+    [{poder} "+V" "+IMPAF" "+UST" .x. {puedan}]
+  ] ;
+
+define ExceptionPONERforIMPAF [
+    [{poner} "+V" "+IMPAF" "+TU" .x. {pon}] |
+    [{poner} "+V" "+IMPAF" "+ELLA" .x. {ponga}] |
+    [{poner} "+V" "+IMPAF" "+NOS" .x. {pongamos}] |
+    [{poner} "+V" "+IMPAF" "+VOS" .x. {poned}] |
+    [{poner} "+V" "+IMPAF" "+UST" .x. {pongan}]
+  ] ;
+
+define ExceptionQUERERforIMPAF [
+    [{querer} "+V" "+IMPAF" "+TU" .x. {quiere}] |
+    [{querer} "+V" "+IMPAF" "+ELLA" .x. {quiera}] |
+    [{querer} "+V" "+IMPAF" "+NOS" .x. {queramos}] |
+    [{querer} "+V" "+IMPAF" "+VOS" .x. {quered}] |
+    [{querer} "+V" "+IMPAF" "+UST" .x. {quieran}]
+  ] ;
+
+define ExceptionSABERforIMPAF [
+    [{saber} "+V" "+IMPAF" "+TU" .x. {sabe}] |
+    [{saber} "+V" "+IMPAF" "+ELLA" .x. {sepa}] |
+    [{saber} "+V" "+IMPAF" "+NOS" .x. {sepamos}] |
+    [{saber} "+V" "+IMPAF" "+VOS" .x. {sabed}] |
+    [{saber} "+V" "+IMPAF" "+UST" .x. {sepan}]
+  ] ;
+
+define ExceptionSALIRforIMPAF [
+    [{salir} "+V" "+IMPAF" "+TU" .x. {sal}] |
+    [{salir} "+V" "+IMPAF" "+ELLA" .x. {salga}] |
+    [{salir} "+V" "+IMPAF" "+NOS" .x. {salgamos}] |
+    [{salir} "+V" "+IMPAF" "+VOS" .x. {salid}] |
+    [{salir} "+V" "+IMPAF" "+UST" .x. {salgan}]
+  ] ;
+
+define ExceptionSERforIMPAF [
+    [{ser} "+V" "+IMPAF" "+TU" .x. {sé}] |
+    [{ser} "+V" "+IMPAF" "+ELLA" .x. {sea}] |
+    [{ser} "+V" "+IMPAF" "+NOS" .x. {seamos}] |
+    [{ser} "+V" "+IMPAF" "+VOS" .x. {sed}] |
+    [{ser} "+V" "+IMPAF" "+UST" .x. {sean}]
+  ] ;
+
+define ExceptionTENERforIMPAF [
+    [{tener} "+V" "+IMPAF" "+TU" .x. {ten}] |
+    [{tener} "+V" "+IMPAF" "+ELLA" .x. {tenga}] |
+    [{tener} "+V" "+IMPAF" "+NOS" .x. {tengamos}] |
+    [{tener} "+V" "+IMPAF" "+VOS" .x. {tened}] |
+    [{tener} "+V" "+IMPAF" "+UST" .x. {tengan}]
+  ] ;
+
+define ExceptionTRAERforIMPAF [
+    [{traer} "+V" "+IMPAF" "+TU" .x. {trae}] |
+    [{traer} "+V" "+IMPAF" "+ELLA" .x. {traiga}] |
+    [{traer} "+V" "+IMPAF" "+NOS" .x. {traigamos}] |
+    [{traer} "+V" "+IMPAF" "+VOS" .x. {traed}] |
+    [{traer} "+V" "+IMPAF" "+UST" .x. {traigan}]
+  ] ;
+
+define ExceptionVENIRforIMPAF [
+    [{venir} "+V" "+IMPAF" "+TU" .x. {ven}] |
+    [{venir} "+V" "+IMPAF" "+ELLA" .x. {venga}] |
+    [{venir} "+V" "+IMPAF" "+NOS" .x. {vengamos}] |
+    [{venir} "+V" "+IMPAF" "+VOS" .x. {venid}] |
+    [{venir} "+V" "+IMPAF" "+UST" .x. {vengan}]
+  ] ;
+
+define ExceptionVERforIMPAF [
+    [{ver} "+V" "+IMPAF" "+TU" .x. {ve}] |
+    [{ver} "+V" "+IMPAF" "+ELLA" .x. {vea}] |
+    [{ver} "+V" "+IMPAF" "+NOS" .x. {veamos}] |
+    [{ver} "+V" "+IMPAF" "+VOS" .x. {ved}] |
+    [{ver} "+V" "+IMPAF" "+UST" .x. {vean}]
+  ] ;
+
+define ExceptionsIMPAF       [
+    ExceptionCAERforIMPAF  | 
+    ExceptionDARforIMPAF    |
+    ExceptionDECIRforIMPAF |
+    ExceptionESTARforIMPAF  |
+    ExceptionHACERforIMPAF  |
+    ExceptionIRforIMPAF    |
+    ExceptionOÍRforIMPAF  |
+    ExceptionPODERforIMPAF |
+    ExceptionPONERforIMPAF  |
+    ExceptionQUERERforIMPAF  |
+    ExceptionSABERforIMPAF    |
+    ExceptionSALIRforIMPAF     |
+    ExceptionSERforIMPAF  |
+    ExceptionTENERforIMPAF  |
+    ExceptionTRAERforIMPAF  |
+    ExceptionVENIRforIMPAF  |
+    ExceptionVERforIMPAF    |
+  ];
+#---------------------PAPAS-Participio pasado-----------------------------------
+
+define ExceptionsPAPAS [
+    [{decir} "+V" "+PAPAS" .x. {dicho}] |
+    [{hacer} "+V" "+PAPAS" .x. {hecho}] |
+    [{ir} "+V" "+PAPAS" .x. {ido}] |
+    [{poner} "+V" "+PAPAS" .x. {puesto}] |
+    [{ver} "+V" "+PAPAS" .x. {visto}] |
+  ];
+
+#-------------------------GER-Gerundio------------------------------------------
+
+define ExceptionsGER [
+    [{caer} "+V" "+GER" .x. {cayendo}] |
+    [{ir} "+V" "+GER" .x. {yendo}] |
+    [{traer} "+V" "+GER" .x. {trayendo}] |
+    [{ver} "+V" "+GER" .x. {viendo}]
+  ];
+
 #---------------------WHOLE----------------------------------
 define ExceptionVerbo [
 	ExceptionsSPRES |
@@ -914,5 +1249,10 @@ define ExceptionVerbo [
 	ExceptionsSPIMA |
 	ExceptionsIPRES |
 	ExceptionsIFUTU |
-	ExceptionsIPIND 
+	ExceptionsIPIND |
+    ExceptionsIMPNE |
+    ExceptionsIMPAF |
+    ExceptionsPAPAS |
+    ExceptionsGER
+    
 ]; 
