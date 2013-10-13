@@ -13,6 +13,6 @@ define Grammar Lexicon .o.
 
 regex Grammar;
 
-save stack NormalAdjetivo.bin
+save stack AdjetivoNormal.bin
 
 quit;

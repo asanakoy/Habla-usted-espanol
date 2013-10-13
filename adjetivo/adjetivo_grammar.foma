@@ -1,7 +1,7 @@
 load stack GuesserAdjetivo.bin
 define Guesser;
 
-load stack NormalAdjetivo.bin
+load stack AdjetivoNormal.bin
 define Normal;
 
 define Grammar [Normal .p. Guesser];

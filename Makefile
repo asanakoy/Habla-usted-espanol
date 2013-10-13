@@ -1,8 +1,9 @@
-al: clean adj sust verb
+all: sust verb adj
 	foma -l combine.foma
+
 adj:
 	make -C adjetivo all
-	cp adjetivo/NormalAdjetivo.bin .
+	cp adjetivo/AdjetivoNormal.bin .
 	cp adjetivo/GuesserAdjetivo.bin .
 	
 sust:
@@ -13,5 +14,6 @@ sust:
 verb:
 	make -C verbo all
 	cp verbo/VerboNormal.bin .
+
 clean:
 	find . -name \*.bin -type f -delete 
