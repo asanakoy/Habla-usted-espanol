@@ -11,7 +11,7 @@ verb:
 	make -C verbo all
 	cp verbo/VerboNormal.bin .
 
-adjetivo:
+adj:
 	make -C adjetivo all
 	cp adjetivo/NormalAdjetivo.bin .
 	cp adjetivo/GuesserAdjetivo.bin .
