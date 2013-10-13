@@ -1,7 +1,12 @@
 source ../common.foma
 
 read lexc espanol_verbo.lexc
-define Lexicon;
+define Verbo;
+
+read lexc VInf.lexc
+define VInf;
+
+define Lexicon (Verbo VInf);
 
 source exceptions_verbo.foma
 source rules.foma

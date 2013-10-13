@@ -1,20 +1,26 @@
-source ../espanol_verbo.lexc
+!!! Irregular verbs. 
+!!! Conjugación de los verbos irregulares.
+!!! group: o - ue
+
+LEXICON Root
+
+Irregulares_2;
 
 LEXICON Irregulares_2
     
-volver  VInf;
-soñar Vinf;
-torcer Vinf;
-encontrar Vinf;
-moverse Vinf;
-acostarse Vinf;
-almorzar Vinf;
-aprobar Vinf;
-costar Vinf;
-sonar Vinf;
-recordar Vinf;
-rodar Vinf;
-soler Vinf;
-cocer Vinf;
-probar Vinf;
-demostrar Vinf;
+volver #;
+soñar #;
+torcer #;
+encontrar #;
+moverse #;
+acostarse #;
+almorzar #;
+aprobar #;
+costar #;
+sonar #;
+recordar #;
+rodar #;
+soler #;
+cocer #;
+probar #;
+demostrar #;

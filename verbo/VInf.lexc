@@ -1,0 +1,79 @@
+!!! lexicon for verbo suffixes !!!
+
+Multichar_Symbols +V +GER +IMPNE +IMPAF +PAPAS +POTI +IPRES +IPIMP +IPIND +IFUTU +SPRES +SPIMA +SFUTU +YO +TU +ELLA +NOS +VOS +UST
+
+LEXICON VInf
+
++V:0 #;
+
++V+IPRES+YO:^1 #;
++V+IPRES+TU:^2 #;
++V+IPRES+ELLA:^3 #;
++V+IPRES+NOS:^4 #;
++V+IPRES+VOS:^5 #;
++V+IPRES+UST:^6 #;
+
++V+IPIMP+YO:*1 #;
++V+IPIMP+TU:*2 #;
++V+IPIMP+ELLA:*3 #;
++V+IPIMP+NOS:*4 #;
++V+IPIMP+VOS:*5 #;
++V+IPIMP+UST:*6 #;
+
++V+IPIND+YO:$1 #;
++V+IPIND+TU:$2 #;
++V+IPIND+ELLA:$3 #;
++V+IPIND+NOS:$4 #;
++V+IPIND+VOS:$5 #;
++V+IPIND+UST:$6 #;
+
++V+IFUTU+YO:)1 #;
++V+IFUTU+TU:)2 #;
++V+IFUTU+ELLA:)3 #;
++V+IFUTU+NOS:)4 #;
++V+IFUTU+VOS:)5 #;
++V+IFUTU+UST:)6 #;
+
++V+SPRES+YO:&1 #;
++V+SPRES+TU:&2 #;
++V+SPRES+ELLA:&3 #;
++V+SPRES+NOS:&4 #;
++V+SPRES+VOS:&5 #;
++V+SPRES+UST:&6 #;
+
++V+SPIMA+YO:(1 #;
++V+SPIMA+TU:(2 #;
++V+SPIMA+ELLA:(3 #;
++V+SPIMA+NOS:(4 #;
++V+SPIMA+VOS:(5 #;
++V+SPIMA+UST:(6 #;
+
++V+SPIMA+YO:((1 #;
++V+SPIMA+TU:((2 #;
++V+SPIMA+ELLA:((3 #;
++V+SPIMA+NOS:((4 #;
++V+SPIMA+VOS:((5 #;
++V+SPIMA+UST:((6 
+
++V+POTI+YO:$$1  #;
++V+POTI+TU:$$2 #;
++V+POTI+ELLA:$$3 #;
++V+POTI+NOS:$$4 #;
++V+POTI+VOS:$$5 #;
++V+POTI+UST:$$6 #;
+
++V+PAPAS:&& #;
+
++V+IMPAF+TU:^^2 #;
++V+IMPAF+ELLA:^^3 #;
++V+IMPAF+NOS:^^4 #;
++V+IMPAF+VOS:^^5 #;
++V+IMPAF+UST:^^6 #;
+
++V+IMPNE+TU:**2 #;
++V+IMPNE+ELLA:**3 #;
++V+IMPNE+NOS:**4 #;
++V+IMPNE+VOS:**5 #;
++V+IMPNE+UST:**6 #;
+
++V+GER:)) #;
