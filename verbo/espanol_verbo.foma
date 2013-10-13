@@ -1,4 +1,4 @@
-source common.foma
+source ../common.foma
 
 read lexc espanol_verbo.lexc
 
@@ -36,6 +36,6 @@ define FullVerboGrammar Lexicon
 
 regex FullVerboGrammar;
 
-save stack NormalVerbo.bin;
+save stack NormalVerbo.bin
 
 quit;
