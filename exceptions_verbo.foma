@@ -875,8 +875,19 @@ define ExceptionVERforSPRES [
 	[{ver} "+V" "+SPRES" "+UST" .x. {vean}]
 ];
 
+define ExceptionSALIRforSPRES [
+	[{salir} "+V" "+SPRES" "+YO" .x. {salga}] |
+	[{salir} "+V" "+SPRES" "+TU" .x. {salgas}] |
+	[{salir} "+V" "+SPRES" "+ELLA" .x. {salga}] |
+	[{salir} "+V" "+SPRES" "+NOS" .x. {salgamos}] |
+	[{salir} "+V" "+SPRES" "+VOS" .x. {salgáis}] |
+	[{salir} "+V" "+SPRES" "+UST" .x. {salgan}]
+];
+
+
 
 define ExceptionsSPRES 		[
+	ExceptionSALIRforSPRES	| 
 	ExceptionVERforSPRES 	|
 	ExceptionVENIRforSPRES 	|
 	ExceptionTRAERforSPRES 	|
