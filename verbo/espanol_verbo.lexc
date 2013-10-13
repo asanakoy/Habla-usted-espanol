@@ -2118,6 +2118,8 @@ zurcir VInf;
 
 LEXICON VInf
 
++V:0 #;
+
 +V+IPRES+YO:^1 #;
 +V+IPRES+TU:^2 #;
 +V+IPRES+ELLA:^3 #;
