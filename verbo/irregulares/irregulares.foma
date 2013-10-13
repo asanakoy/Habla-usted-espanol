@@ -1,0 +1,33 @@
+read lexc VInf.lexc
+define VInf;
+
+read lexc irregulares_1.lexc
+define IRR_1;
+read lexc irregulares_2.lexc
+define IRR_2;
+read lexc irregulares_3.lexc
+define IRR_3;
+read lexc irregulares_4.lexc
+define IRR_4;
+read lexc irregulares_5.lexc
+define IRR_5;
+read lexc irregulares_6.lexc
+define IRR_6;
+read lexc irregulares_7.lexc
+define IRR_7;
+read lexc irregulares_8.lexc
+define IRR_8;
+read lexc irregulares_9.lexc
+define IRR_9;
+
+define IRR_1 (IRR_1 VInf);
+define IRR_2 (IRR_2 VInf);
+define IRR_3 (IRR_3 VInf);
+define IRR_4 (IRR_4 VInf);
+define IRR_5 (IRR_5 VInf);
+define IRR_6 (IRR_6 VInf);
+define IRR_7 (IRR_7 VInf);
+define IRR_8 (IRR_8 VInf);
+define IRR_9 (IRR_9 VInf);
+
+!!! define Rule_e_To_i [?* e ?*]:[?* i ?*];
