@@ -1,4 +1,4 @@
-all: sust verb adj
+all: clean sust verb adj
 	foma -l combine.foma
 	make -C apply all
 
