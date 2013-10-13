@@ -7,6 +7,9 @@ def execute(cmd):
 test = open("spanish.txt.test.clean.utf-8", "r")
 answer = open("answer.txt", "w")
 
+def check(word):
+    return word.isalpha()
+
 for line in test:
     splitted = line.split()
     wordform = splitted[0]
@@ -15,13 +18,14 @@ for line in test:
     nouns, verbs, adjectives = set(), set(), set()
     for row in temp:
         parts = row.split("+")
+        print parts
         if len(parts) <= 1:
             continue
-        if parts[1] == 'V':
+        if parts[1] == 'V' and check(parts[0]):
             verbs.add(parts[0])
-        elif parts[1] == 'N':
+        elif parts[1] == 'N' and check(parts[0]):
             nouns.add(parts[0])
-        elif parts[1] == 'A':
+        elif parts[1] == 'A' and check(parts[0]):
             adjectives.add(parts[0])
     best_noun, best_verb, best_adj = "","", ""
     has_noun, has_verb, has_adj = False, False, False
@@ -34,16 +38,16 @@ for line in test:
     if len(adjectives) > 0:
         best_adj = min(adjectives)
         has_adj = True
-    print wordform,
+    print >> answer, wordform,
 
     full_count = 0
     if has_verb:
-        print best_verb + "+V",
+        print >> answer, best_verb + "+V",
         full_count += 1
     if has_noun:
-        print best_noun + "+N",
+        print >> answer, best_noun + "+N",
         full_count += 1;
-    if has_adj && full_count < 2:
-        print best_adj + "+A",
-    print ""
+    if has_adj and full_count < 2:
+        print >> answer, best_adj + "+A",
+    print >> answer, ""
 

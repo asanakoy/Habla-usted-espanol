@@ -6,7 +6,7 @@ define Lexicon;
 source exceptions_verbo.foma
 source rules.foma
 
-defin NormalGrammar Lexicon
+define NormalGrammar Lexicon
                     .o. AllRulesTogether
                     .o. DigitsDelete;
 
