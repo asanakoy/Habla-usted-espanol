@@ -18,7 +18,7 @@ define NormalGrammar Lexicon
 load stack VerboIrregulare.bin
 define IrregularGrammar;
 
-define FullVerboGrammar [IrregularGrammar | [ExceptionVerbo .P. NormalGrammar]];
+define FullVerboGrammar [ExceptionVerbo .P. NormalGrammar];
                         
 regex FullVerboGrammar;
 save stack VerboNormal.bin
