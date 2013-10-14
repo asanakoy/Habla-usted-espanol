@@ -18,3 +18,4 @@
 # Train, test, processing files
 *.log
 *.utf-8
+apply/*.txt
