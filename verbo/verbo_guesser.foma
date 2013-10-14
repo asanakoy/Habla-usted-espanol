@@ -2,7 +2,7 @@ source rules.foma
 source ../common.foma
 
 define GuessLexicon Stem  [
-	["+V"]: [[0 | "^" | "*" | "$" | ")" | "&" | "(" | "(" "(" | "$" "$" | "&" "$" | "^" "^" | "*" "*" | ")" ")"] Digits] 
+	["+V"]: [["^" | "*" | "$" | ")" | "&" | "(" | "(" "(" | "$" "$" | "&" "$" | "^" "^" | "*" "*" | ")" ")"] Digits] 
 ];
 
 define GuessGrammar [GuessLexicon

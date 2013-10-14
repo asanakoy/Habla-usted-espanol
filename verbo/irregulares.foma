@@ -5,44 +5,113 @@ read lexc VInf.lexc
 define VInf;
 
 read lexc irregulares/irregulares_1.lexc
-define IRR1;
+define IRRL1;
+
 read lexc irregulares/irregulares_2.lexc
-define IRR2;
+define IRRL2;
+
 read lexc irregulares/irregulares_3.lexc
-define IRR3;
+define IRRL3;
+
 read lexc irregulares/irregulares_4.lexc
-define IRR4;
+define IRRL4;
+
 read lexc irregulares/irregulares_5.lexc
-define IRR5;
+define IRRL5;
+
 read lexc irregulares/irregulares_6.lexc
-define IRR6;
+define IRRL6;
+
 read lexc irregulares/irregulares_7.lexc
-define IRR7;
+define IRRL7;
+
 read lexc irregulares/irregulares_8.lexc
-define IRR8;
+define IRRL8;
+
 read lexc irregulares/irregulares_9.lexc
-define IRR9;
+define IRRL9;
 
-define IRR1 [IRR1 VInf];
-define IRR2 [IRR2 VInf];
-define IRR3 [IRR3 VInf];
-define IRR4 [IRR4 VInf];
-define IRR5 [IRR5 VInf];
-define IRR6 [IRR6 VInf];
-define IRR7 [IRR7 VInf];
-define IRR8 [IRR8 VInf];
-define IRR9 [IRR9 VInf];
+define IRR1 [IRRL1 VInf];
+define IRR2 [IRRL2 VInf];
+define IRR3 [IRRL3 VInf];
+define IRR4 [IRRL4 VInf];
+define IRR5 [IRRL5 VInf];
+define IRR6 [IRRL6 VInf];
+define IRR7 [IRRL7 VInf];
+define IRR8 [IRRL8 VInf];
+define IRR9 [IRRL9 VInf];
 
-define RuleOtoUE o (->) ue;
-define RuleEtoI e (->) i;
+define Rule1EtoEI e @> [i e | e];
+define Rule2OtoUE o @> [u e | o];
+define Rule3EtoI  e @> [i | e];
+define Rule4EtoIEorI e @> [i | ie | e];
+define Rule5OtoUEorU o @> [o | ue | u];
+define Rule6CtoZC c @> [c | zc];
+define Rule7CtoZCJ c @> [zc | c | j ];
+define Rule8ItoY  i @> [y | í | i];
+define AfterRule9 [i o | i e] @> [o | e];
 
-
-define Irr2Grammar IRR2
-                    .o. RuleOtoUE
+define Irr1Grammar IRR1
+                    .o. Rule1EtoEI
                     .o. AllRulesTogether
                     .o. DigitsDelete;
 
-define IrrGrammar Irr2Grammar;
+
+
+define Irr2Grammar IRR2
+                    .o. Rule2OtoUE
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+define Irr3Grammar IRR3
+                    .o. Rule3EtoI
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+
+define Irr4Grammar IRR4
+		    .o. Rule4EtoIEorI 
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+define Irr5Grammar IRR5
+		    .o. Rule5OtoUEorU 
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+define Irr6Grammar IRR6
+		    .o. Rule6CtoZC
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+define Irr7Grammar IRR7
+		    .o. Rule7CtoZCJ
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+define Irr8Grammar IRR8
+		    .o. Rule8ItoY
+                    .o. AllRulesTogether
+                    .o. DigitsDelete;
+
+
+define Irr9Grammar IRR9
+                    .o. AllRulesTogether
+		    .o. AfterRule9
+                    .o. DigitsDelete;
+
+
+
+define IrrGrammar [Irr1Grammar 
+	| Irr2Grammar
+	| Irr3Grammar
+	| Irr4Grammar
+	| Irr5Grammar
+	| Irr6Grammar
+	| Irr7Grammar
+	| Irr8Grammar
+	| Irr9Grammar
+];
 
 regex IrrGrammar;
 

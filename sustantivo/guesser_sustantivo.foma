@@ -17,7 +17,7 @@ define MascToFemEndAInsertion [..] -> a || PlusAEndings _ "*";
 
 define PluralEInsertion [..] -> e || WhenInsertE "^" _ s; 
 
-define CReplacement c -> qu || _ "^";
+define CReplacement c -> {qu} || _ "^";
 
 define ZXReplacement z -> c || _ "^",,
 		     x -> c || _ "^";
