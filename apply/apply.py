@@ -35,18 +35,21 @@ for line in inp:
                     best_adj = min(adjectives)
                     has_adj = True
 
-                print >> answer, wordform,
+                printstring = wordform
 
                 full_count = 0
                 if has_verb:
-                        print >> answer, best_verb + "+V",
+                        printstring += "\t"
+                        printstring += best_verb + "+V"
                         full_count += 1
                 if has_noun:
-                        print >> answer, best_noun + "+N",
+                        printstring += "\t"
+                        printstring += best_noun + "+N"
                         full_count += 1;
                 if has_adj and full_count < 2:
-                        print >> answer, best_adj + "+A",
-                print >> answer, ""
+                        printstring += "\t"
+                        printstring += best_adj + "+A"
+                print >> answer, printstring 
 
             nouns, verbs, adjectives = set(), set(), set()
             fcnt += 1
